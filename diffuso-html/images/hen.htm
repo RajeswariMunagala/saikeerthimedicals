@@ -1,0 +1,2935 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="https://www.vetsfarma.com/xmlrpc.php" />
+
+    
+    <link rel="shortcut icon" href="//www.vetsfarma.com/wp-content/uploads/2017/09/vetsfarma.png" type="image/x-icon" />
+
+    <link rel="apple-touch-icon" href="//www.vetsfarma.com/wp-content/uploads/2017/09/vetsfarma.png">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="//www.vetsfarma.com/wp-content/uploads/2017/09/vetsfarma.png">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="//www.vetsfarma.com/wp-content/uploads/2017/09/vetsfarma.png">
+
+    <link rel="apple-touch-icon" sizes="152x152" href="//www.vetsfarma.com/wp-content/uploads/2017/09/vetsfarma.png">
+
+
+<title>Products &#8211; Vets Farma Pvt Ltd</title>
+<style rel="stylesheet" property="stylesheet" type="text/css">.ms-loading-container .ms-loading, .ms-slide .ms-slide-loading { background-image: none !important; background-color: transparent !important; box-shadow: none !important; } #header .logo { max-width: 320px; } @media (min-width: 1160px) { #header .logo { max-width: 320px; } } @media (max-width: 991px) { #header .logo { max-width: 110px; } } @media (max-width: 767px) { #header .logo { max-width: 110px; } } </style><meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Vets Farma Pvt Ltd &raquo; Feed" href="https://www.vetsfarma.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Vets Farma Pvt Ltd &raquo; Comments Feed" href="https://www.vetsfarma.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Vets Farma Pvt Ltd &raquo; Products Feed" href="https://www.vetsfarma.com/shop/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/www.vetsfarma.com\/wp-includes\/js\/wp-emoji.js?ver=6.5.2","twemoji":"https:\/\/www.vetsfarma.com\/wp-includes\/js\/twemoji.js?ver=6.5.2"}};
+/**
+ * @output wp-includes/js/wp-emoji-loader.js
+ */
+
+/**
+ * Emoji Settings as exported in PHP via _print_emoji_detection_script().
+ * @typedef WPEmojiSettings
+ * @type {object}
+ * @property {?object} source
+ * @property {?string} source.concatemoji
+ * @property {?string} source.twemoji
+ * @property {?string} source.wpemoji
+ * @property {?boolean} DOMReady
+ * @property {?Function} readyCallback
+ */
+
+/**
+ * Support tests.
+ * @typedef SupportTests
+ * @type {object}
+ * @property {?boolean} flag
+ * @property {?boolean} emoji
+ */
+
+/**
+ * IIFE to detect emoji support and load Twemoji if needed.
+ *
+ * @param {Window} window
+ * @param {Document} document
+ * @param {WPEmojiSettings} settings
+ */
+( function wpEmojiLoader( window, document, settings ) {
+	if ( typeof Promise === 'undefined' ) {
+		return;
+	}
+
+	var sessionStorageKey = 'wpEmojiSettingsSupports';
+	var tests = [ 'flag', 'emoji' ];
+
+	/**
+	 * Checks whether the browser supports offloading to a Worker.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @returns {boolean}
+	 */
+	function supportsWorkerOffloading() {
+		return (
+			typeof Worker !== 'undefined' &&
+			typeof OffscreenCanvas !== 'undefined' &&
+			typeof URL !== 'undefined' &&
+			URL.createObjectURL &&
+			typeof Blob !== 'undefined'
+		);
+	}
+
+	/**
+	 * @typedef SessionSupportTests
+	 * @type {object}
+	 * @property {number} timestamp
+	 * @property {SupportTests} supportTests
+	 */
+
+	/**
+	 * Get support tests from session.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @returns {?SupportTests} Support tests, or null if not set or older than 1 week.
+	 */
+	function getSessionSupportTests() {
+		try {
+			/** @type {SessionSupportTests} */
+			var item = JSON.parse(
+				sessionStorage.getItem( sessionStorageKey )
+			);
+			if (
+				typeof item === 'object' &&
+				typeof item.timestamp === 'number' &&
+				new Date().valueOf() < item.timestamp + 604800 && // Note: Number is a week in seconds.
+				typeof item.supportTests === 'object'
+			) {
+				return item.supportTests;
+			}
+		} catch ( e ) {}
+		return null;
+	}
+
+	/**
+	 * Persist the supports in session storage.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @param {SupportTests} supportTests Support tests.
+	 */
+	function setSessionSupportTests( supportTests ) {
+		try {
+			/** @type {SessionSupportTests} */
+			var item = {
+				supportTests: supportTests,
+				timestamp: new Date().valueOf()
+			};
+
+			sessionStorage.setItem(
+				sessionStorageKey,
+				JSON.stringify( item )
+			);
+		} catch ( e ) {}
+	}
+
+	/**
+	 * Checks if two sets of Emoji characters render the same visually.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 4.9.0
+	 *
+	 * @private
+	 *
+	 * @param {CanvasRenderingContext2D} context 2D Context.
+	 * @param {string} set1 Set of Emoji to test.
+	 * @param {string} set2 Set of Emoji to test.
+	 *
+	 * @return {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( context, set1, set2 ) {
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, context.canvas.width, context.canvas.height );
+		context.fillText( set1, 0, 0 );
+		var rendered1 = new Uint32Array(
+			context.getImageData(
+				0,
+				0,
+				context.canvas.width,
+				context.canvas.height
+			).data
+		);
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, context.canvas.width, context.canvas.height );
+		context.fillText( set2, 0, 0 );
+		var rendered2 = new Uint32Array(
+			context.getImageData(
+				0,
+				0,
+				context.canvas.width,
+				context.canvas.height
+			).data
+		);
+
+		return rendered1.every( function ( rendered2Data, index ) {
+			return rendered2Data === rendered2[ index ];
+		} );
+	}
+
+	/**
+	 * Determines if the browser properly renders Emoji that Twemoji can supplement.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @private
+	 *
+	 * @param {CanvasRenderingContext2D} context 2D Context.
+	 * @param {string} type Whether to test for support of "flag" or "emoji".
+	 * @param {Function} emojiSetsRenderIdentically Reference to emojiSetsRenderIdentically function, needed due to minification.
+	 *
+	 * @return {boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( context, type, emojiSetsRenderIdentically ) {
+		var isIdentical;
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for Transgender flag compatibility. Added in Unicode 13.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (white flag emoji + transgender symbol).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83C\uDFF3\uFE0F\u200D\u26A7\uFE0F', // as a zero-width joiner sequence
+					'\uD83C\uDFF3\uFE0F\u200B\u26A7\uFE0F' // separated by a zero-width space
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83C\uDDFA\uD83C\uDDF3', // as the sequence of two code points
+					'\uD83C\uDDFA\u200B\uD83C\uDDF3' // as the two code points separated by a zero-width space
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather a five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					// as the flag sequence
+					'\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC65\uDB40\uDC6E\uDB40\uDC67\uDB40\uDC7F',
+					// with each code point separated by a zero-width space
+					'\uD83C\uDFF4\u200B\uDB40\uDC67\u200B\uDB40\uDC62\u200B\uDB40\uDC65\u200B\uDB40\uDC6E\u200B\uDB40\uDC67\u200B\uDB40\uDC7F'
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * Four and twenty blackbirds baked in a pie.
+				 *
+				 * To test for Emoji 15.0 support, try to render a new emoji: Blackbird.
+				 *
+				 * The Blackbird is a ZWJ sequence combining 🐦 Bird and ⬛ large black square.,
+				 *
+				 * 0x1F426 (\uD83D\uDC26) == Bird
+				 * 0x200D == Zero-Width Joiner (ZWJ) that links the code points for the new emoji or
+				 * 0x200B == Zero-Width Space (ZWS) that is rendered for clients not supporting the new emoji.
+				 * 0x2B1B == Large Black Square
+				 *
+				 * When updating this test for future Emoji releases, ensure that individual emoji that make up the
+				 * sequence come from older emoji standards.
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83D\uDC26\u200D\u2B1B', // as the zero-width joiner sequence
+					'\uD83D\uDC26\u200B\u2B1B' // separated by a zero-width space
+				);
+
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Checks emoji support tests.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @param {string[]} tests Tests.
+	 * @param {Function} browserSupportsEmoji Reference to browserSupportsEmoji function, needed due to minification.
+	 * @param {Function} emojiSetsRenderIdentically Reference to emojiSetsRenderIdentically function, needed due to minification.
+	 *
+	 * @return {SupportTests} Support tests.
+	 */
+	function testEmojiSupports( tests, browserSupportsEmoji, emojiSetsRenderIdentically ) {
+		var canvas;
+		if (
+			typeof WorkerGlobalScope !== 'undefined' &&
+			self instanceof WorkerGlobalScope
+		) {
+			canvas = new OffscreenCanvas( 300, 150 ); // Dimensions are default for HTMLCanvasElement.
+		} else {
+			canvas = document.createElement( 'canvas' );
+		}
+
+		var context = canvas.getContext( '2d', { willReadFrequently: true } );
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		var supports = {};
+		tests.forEach( function ( test ) {
+			supports[ test ] = browserSupportsEmoji( context, test, emojiSetsRenderIdentically );
+		} );
+		return supports;
+	}
+
+	/**
+	 * Adds a script to the head of the document.
+	 *
+	 * @ignore
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param {string} src The url where the script is located.
+	 *
+	 * @return {void}
+	 */
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+		script.src = src;
+		script.defer = true;
+		document.head.appendChild( script );
+	}
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	// Create a promise for DOMContentLoaded since the worker logic may finish after the event has fired.
+	var domReadyPromise = new Promise( function ( resolve ) {
+		document.addEventListener( 'DOMContentLoaded', resolve, {
+			once: true
+		} );
+	} );
+
+	// Obtain the emoji support from the browser, asynchronously when possible.
+	new Promise( function ( resolve ) {
+		var supportTests = getSessionSupportTests();
+		if ( supportTests ) {
+			resolve( supportTests );
+			return;
+		}
+
+		if ( supportsWorkerOffloading() ) {
+			try {
+				// Note that the functions are being passed as arguments due to minification.
+				var workerScript =
+					'postMessage(' +
+					testEmojiSupports.toString() +
+					'(' +
+					[
+						JSON.stringify( tests ),
+						browserSupportsEmoji.toString(),
+						emojiSetsRenderIdentically.toString()
+					].join( ',' ) +
+					'));';
+				var blob = new Blob( [ workerScript ], {
+					type: 'text/javascript'
+				} );
+				var worker = new Worker( URL.createObjectURL( blob ), { name: 'wpTestEmojiSupports' } );
+				worker.onmessage = function ( event ) {
+					supportTests = event.data;
+					setSessionSupportTests( supportTests );
+					worker.terminate();
+					resolve( supportTests );
+				};
+				return;
+			} catch ( e ) {}
+		}
+
+		supportTests = testEmojiSupports( tests, browserSupportsEmoji, emojiSetsRenderIdentically );
+		setSessionSupportTests( supportTests );
+		resolve( supportTests );
+	} )
+		// Once the browser emoji support has been obtained from the session, finalize the settings.
+		.then( function ( supportTests ) {
+			/*
+			 * Tests the browser support for flag emojis and other emojis, and adjusts the
+			 * support settings accordingly.
+			 */
+			for ( var test in supportTests ) {
+				settings.supports[ test ] = supportTests[ test ];
+
+				settings.supports.everything =
+					settings.supports.everything && settings.supports[ test ];
+
+				if ( 'flag' !== test ) {
+					settings.supports.everythingExceptFlag =
+						settings.supports.everythingExceptFlag &&
+						settings.supports[ test ];
+				}
+			}
+
+			settings.supports.everythingExceptFlag =
+				settings.supports.everythingExceptFlag &&
+				! settings.supports.flag;
+
+			// Sets DOMReady to false and assigns a ready function to settings.
+			settings.DOMReady = false;
+			settings.readyCallback = function () {
+				settings.DOMReady = true;
+			};
+		} )
+		.then( function () {
+			return domReadyPromise;
+		} )
+		.then( function () {
+			// When the browser can not render everything we need to load a polyfill.
+			if ( ! settings.supports.everything ) {
+				settings.readyCallback();
+
+				var src = settings.source || {};
+
+				if ( src.concatemoji ) {
+					addScript( src.concatemoji );
+				} else if ( src.wpemoji && src.twemoji ) {
+					addScript( src.twemoji );
+					addScript( src.wpemoji );
+				}
+			}
+		} );
+} )( window, document, window._wpemojiSettings );
+
+/* ]]> */
+</script>
+<link rel='stylesheet' id='validate-engine-css-css' href='https://www.vetsfarma.com/wp-content/plugins/wysija-newsletters/css/validationEngine.jquery.css?ver=2.12' type='text/css' media='all' />
+<link rel='stylesheet' id='berocket_aapf_widget-style-css' href='https://www.vetsfarma.com/wp-content/plugins/woocommerce-ajax-filters/assets/frontend/css/fullmain.min.css?ver=1.6.4.5' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.vetsfarma.com/wp-includes/css/dist/block-library/style.css?ver=6.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css' href='https://www.vetsfarma.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=1646966440' type='text/css' media='all' />
+<link rel='stylesheet' id='yith-wcan-shortcodes-css' href='https://www.vetsfarma.com/wp-content/plugins/yith-woocommerce-ajax-navigation/assets/css/shortcodes.css?ver=4.29.0' type='text/css' media='all' />
+<style id='yith-wcan-shortcodes-inline-css' type='text/css'>
+:root{
+	--yith-wcan-filters_colors_titles: #434343;
+	--yith-wcan-filters_colors_background: #FFFFFF;
+	--yith-wcan-filters_colors_accent: #A7144C;
+	--yith-wcan-filters_colors_accent_r: 167;
+	--yith-wcan-filters_colors_accent_g: 20;
+	--yith-wcan-filters_colors_accent_b: 76;
+	--yith-wcan-color_swatches_border_radius: 100%;
+	--yith-wcan-color_swatches_size: 30px;
+	--yith-wcan-labels_style_background: #FFFFFF;
+	--yith-wcan-labels_style_background_hover: #A7144C;
+	--yith-wcan-labels_style_background_active: #A7144C;
+	--yith-wcan-labels_style_text: #434343;
+	--yith-wcan-labels_style_text_hover: #FFFFFF;
+	--yith-wcan-labels_style_text_active: #FFFFFF;
+	--yith-wcan-anchors_style_text: #434343;
+	--yith-wcan-anchors_style_text_hover: #A7144C;
+	--yith-wcan-anchors_style_text_active: #A7144C;
+}
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/**
+ * These rules are needed for backwards compatibility.
+ * They should match the button element rules in the base theme.json file.
+ */
+.wp-block-button__link {
+	color: #ffffff;
+	background-color: #32373c;
+	border-radius: 9999px; /* 100% causes an oval, but any explicit but really high value retains the pill shape. */
+
+	/* This needs a low specificity so it won't override the rules from the button element if defined in theme.json. */
+	box-shadow: none;
+	text-decoration: none;
+
+	/* The extra 2px are added to size solids the same as the outline versions.*/
+	padding: calc(0.667em + 2px) calc(1.333em + 2px);
+
+	font-size: 1.125em;
+}
+
+.wp-block-file__button {
+	background: #32373c;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.vetsfarma.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css' href='https://www.vetsfarma.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.3.1' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+.tparrows:before{color:#2a1770;text-shadow:0 0 3px #fff;}.revslider-initialised .tp-loader{z-index:18;}
+</style>
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='yith_wcas_frontend-css' href='https://www.vetsfarma.com/wp-content/plugins/yith-woocommerce-ajax-search/assets/css/yith_wcas_ajax_search.css?ver=1.38.0' type='text/css' media='all' />
+<link rel='stylesheet' id='bsf-Defaults-css' href='https://www.vetsfarma.com/wp-content/uploads/smile_fonts/Defaults/Defaults.css?ver=6.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css' href='https://www.vetsfarma.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ultimate-style-min-css' href='https://www.vetsfarma.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/ultimate.min.css?ver=3.16.12' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-bootstrap-css' href='https://www.vetsfarma.com/wp-content/themes/porto/css/bootstrap_1.css?ver=3.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-plugins-css' href='https://www.vetsfarma.com/wp-content/themes/porto/css/plugins_1.css?ver=3.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-theme-elements-css' href='https://www.vetsfarma.com/wp-content/themes/porto/css/theme_elements_1.css?ver=3.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-theme-css' href='https://www.vetsfarma.com/wp-content/themes/porto/css/theme_1.css?ver=3.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-theme-shop-css' href='https://www.vetsfarma.com/wp-content/themes/porto/css/theme_shop_1.css?ver=3.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-skin-css' href='https://www.vetsfarma.com/wp-content/themes/porto/css/skin_1.css?ver=3.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-style-css' href='https://www.vetsfarma.com/wp-content/themes/porto/style.css?ver=3.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-google-fonts-css' href='//fonts.googleapis.com/css?family=Open+Sans%3A200%2C300%2C400%2C700%2C800%2C%7COswald%3A200%2C300%2C400%2C700%2C800%2C%7C&#038;subset=cyrillic%2Ccyrillic-ext%2Cgreek%2Cgreek-ext%2Ckhmer%2Clatin%2Clatin-ext%2Cvietnamese&#038;ver=6.5.2' type='text/css' media='all' />
+<!--[if lt IE 10]>
+<link rel='stylesheet' id='porto-ie-css' href='https://www.vetsfarma.com/wp-content/themes/porto/css/ie.css?ver=3.6.4' type='text/css' media='all' />
+<![endif]-->
+<script type="text/template" id="tmpl-variation-template">
+	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
+	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
+	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+</script>
+<script type="text/template" id="tmpl-unavailable-variation-template">
+	<p>Sorry, this product is unavailable. Please choose a different combination.</p>
+</script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-includes/js/jquery/jquery.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1&#039; defer=&#039;defer" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.3.1&#039; defer=&#039;defer" id="tp-tools-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.3.1&#039; defer=&#039;defer" id="revmin-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.js?ver=2.70&#039; defer=&#039;defer" id="jquery-blockui-js"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/www.vetsfarma.com","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.js?ver=3.7.3&#039; defer=&#039;defer" id="wc-add-to-cart-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=5.1.1&#039; defer=&#039;defer" id="vc_woocommerce-add-to-cart-js-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-includes/js/jquery/ui/core.js?ver=1.13.2&#039; defer=&#039;defer" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate.min.js?ver=3.16.12&#039; defer=&#039;defer" id="ultimate-script-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/themes/porto/js/plugins.min.js?ver=3.6.4&#039; defer=&#039;defer" id="porto-plugins-js"></script>
+<link rel="https://api.w.org/" href="https://www.vetsfarma.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.vetsfarma.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.5.2" />
+<meta name="generator" content="WooCommerce 3.7.3" />
+<style></style>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://www.vetsfarma.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.4.3.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<script type="text/javascript">function setREVStartSize(e){
+				try{ var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;					
+					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+				}catch(d){console.log("Failure at Presize of Slider:"+d)}
+			};</script>
+		<style type="text/css" id="wp-custom-css">
+			.banner-img img.ultb3-img {
+    width: 100% !important;
+}
+@media only screen and (min-width: 1200px) {
+.woocommerce.columns-1 .products li.product {
+    width: 25%;
+}
+}
+
+ .recentpost img.wp-post-image {
+    height: 300px;
+    object-fit: contain;
+}
+
+#main-menu .mega-menu > li.menu-item > a{
+    font-size: 15px !important;
+
+}		</style>
+		<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+
+
+    <script type="text/javascript">
+        
+                    
+                
+    </script>
+
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126400629-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126400629-6');
+</script>
+	
+</head>
+<body class="archive post-type-archive post-type-archive-product full blog-1  theme-porto woocommerce woocommerce-page woocommerce-no-js yith-wcan-free wpb-js-composer js-comp-ver-5.1.1 vc_responsive">
+    
+    <div class="page-wrapper"><!-- page wrapper -->
+
+        
+                    <div class="header-wrapper wide clearfix"><!-- header wrapper -->
+                                
+                    <header id="header" class="header-18 search-sm">
+
+    
+    <div class="header-top">
+
+        <div class="container">
+
+            <div class="header-left">
+
+                
+            </div>
+
+            <div class="header-right">
+
+                <ul id="menu-upper-nav" class="top-links mega-menu show-arrow effect-down subeffect-fadein-left"><li id="nav-menu-item-836" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has-sub narrow "><h5>Login</h5>
+<div class="popup"><div class="inner" style=""><ul class="sub-menu">
+	<li id="nav-menu-item-1513" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="https://play.google.com/store/apps/details?id=creative.vetsfarma" class="">Install App &#038; Start Reporting</a></li>
+	<li id="nav-menu-item-1520" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://fieldforce.vetsfarma.com/" class="">New Field Force S/w</a></li>
+	<li id="nav-menu-item-837" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://app.vetsfarma.com/" class="">Admin</a></li>
+</ul></div></div>
+</li>
+</ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+
+    <div class="header-main">
+
+        <div class="container">
+
+            <div class="header-left">
+
+                <div class="logo">
+
+
+    <a href="https://www.vetsfarma.com/" title="Vets Farma Pvt Ltd - Caring for the speechless since 1979" rel="home">
+
+
+
+        
+
+
+        <img class="img-responsive standard-logo" width="320" height="100" src="//www.vetsfarma.com/wp-content/uploads/2017/11/vetsfarma-logo.png" alt="Vets Farma Pvt Ltd" /><img class="img-responsive retina-logo" width="320" height="100" src="//www.vetsfarma.com/wp-content/uploads/2017/11/vetsfarma-logo.png" alt="Vets Farma Pvt Ltd" style="display:none;" />
+
+
+        
+
+
+    </a>
+
+
+
+    </div>
+            </div>
+
+			
+
+			<div class="header-right search-popup">
+
+                
+                <div class="">
+
+					<div id="main-menu">
+
+						<ul id="menu-main-menu" class="main-menu mega-menu show-arrow effect-down subeffect-fadein-left"><li id="nav-menu-item-506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home  narrow "><a href="https://www.vetsfarma.com/" class=""><i class="fa fa-home"></i></a></li>
+<li id="nav-menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has-sub narrow "><a href="https://www.vetsfarma.com/our-company/" class="">Our Company</a>
+<div class="popup"><div class="inner" style=""><ul class="sub-menu">
+	<li id="nav-menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page " data-cols="1"><a href="https://www.vetsfarma.com/about-us/" class="">About Us</a></li>
+	<li id="nav-menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page " data-cols="1"><a href="https://www.vetsfarma.com/vision-and-mission/" class="">Vision &#038; Mission</a></li>
+	<li id="nav-menu-item-534" class="menu-item menu-item-type-post_type menu-item-object-page " data-cols="1"><a href="https://www.vetsfarma.com/founder/" class="">Founder</a></li>
+	<li id="nav-menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page " data-cols="1"><a href="https://www.vetsfarma.com/leadership-team/" class="">Leadership Team</a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-603" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has-sub narrow "><a href="#" class="">Country</a>
+<div class="popup"><div class="inner" style=""><ul class="sub-menu">
+	<li id="nav-menu-item-604" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://vetsfarma.com/shop/?filters=country%5B22%5D" class="">India</a></li>
+	<li id="nav-menu-item-605" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://vetsfarma.com/shop/?filters=country%5B23%5D" class="">Nepal</a></li>
+	<li id="nav-menu-item-607" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://vetsfarma.com/shop/?filters=country%5B24%5D" class="">Bangladesh</a></li>
+	<li id="nav-menu-item-608" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://vetsfarma.com/shop/?filters=country%5B25%5D" class="">Philippines</a></li>
+	<li id="nav-menu-item-788" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://vetsfarma.com/shop/?filters=country%5B26%5D" class="">Oman</a></li>
+	<li id="nav-menu-item-789" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://vetsfarma.com/shop/?filters=country%5B27%5D" class="">Bhutan</a></li>
+	<li id="nav-menu-item-786" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"></li>
+	<li id="nav-menu-item-1088" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="#" class="">USA</a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children  has-sub narrow "><a href="https://www.vetsfarma.com/animal-healthcare-company/" class="">Livestock</a>
+<div class="popup"><div class="inner" style=""><ul class="sub-menu">
+	<li id="nav-menu-item-64" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/" class="">Anthelmintics</a></li>
+	<li id="nav-menu-item-564" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/" class="">Antibacterial / Antibiotic</a></li>
+	<li id="nav-menu-item-553" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/animal-healthcare-company/anti-inflammatory-analgesic-antipyretic/" class="">Anti-inflammatory, Analgesic &amp; Antipyretic</a></li>
+	<li id="nav-menu-item-554" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/" class="">Feed Supplement</a></li>
+	<li id="nav-menu-item-71" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/animal-healthcare-company/hormones/" class="">Hormones</a></li>
+	<li id="nav-menu-item-70" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/animal-healthcare-company/herbals/" class="">Herbals</a></li>
+	<li id="nav-menu-item-563" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/animal-healthcare-company/probiotic-combination/" class="">Probiotic Combination</a></li>
+	<li id="nav-menu-item-562" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/animal-healthcare-company/metabolic-stimulant/" class="">Metabolic stimulant</a></li>
+	<li id="nav-menu-item-72" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/animal-healthcare-company/supportive/" class="">Supportive</a></li>
+	<li id="nav-menu-item-718" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/animal-healthcare-company/anti-histaminic/" class="">Anti-Histaminic</a></li>
+	<li id="nav-menu-item-65" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/animal-healthcare-company/anti-bloat/" class="">Anti Bloat</a></li>
+	<li id="nav-menu-item-991" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/animal-healthcare-company/phytogenic-hepatotonic-feed-additive/" class="">Phytogenic Hepatotonic Feed Additive</a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-26" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children  has-sub narrow "><a href="https://www.vetsfarma.com/poultry/" class="">Poultry</a>
+<div class="popup"><div class="inner" style=""><ul class="sub-menu">
+	<li id="nav-menu-item-251" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/poultry/acidifier/" class="">Acidifier</a></li>
+	<li id="nav-menu-item-74" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/poultry/antibacterial-antibiotics-poultry/" class="">Antibacterial / Antibiotics</a></li>
+	<li id="nav-menu-item-556" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/poultry/anti-inflammatory-analgesic-antipyretic-poultry/" class="">Anti-inflammatory, Analgesic &amp; Antipyretic</a></li>
+	<li id="nav-menu-item-558" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/poultry/poultry-feed-additives/" class="">Feed supplement</a></li>
+	<li id="nav-menu-item-559" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/poultry/immunomodulator/" class="">Immunomodulator</a></li>
+	<li id="nav-menu-item-993" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/poultry/phytogenic-feed-additives-poultry/" class="">Phytogenic Hepatotonic Feed Additive</a></li>
+	<li id="nav-menu-item-561" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/poultry/toxin-binder/" class="">Toxin Binder</a></li>
+	<li id="nav-menu-item-78" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/poultry/supportive-poultry/" class="">Supportive</a></li>
+	<li id="nav-menu-item-1089" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat " data-cols="1"><a href="https://www.vetsfarma.com/poultry/enzymes/" class="">Enzymes</a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-508" class="menu-item menu-item-type-post_type menu-item-object-page  narrow "><a href="https://www.vetsfarma.com/news-events/" class="">News &#038; Events</a></li>
+<li id="nav-menu-item-1645" class="menu-item menu-item-type-post_type menu-item-object-page  narrow "><a href="https://www.vetsfarma.com/training-program-or-events/" class="">Training Programs</a></li>
+<li id="nav-menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page  narrow "><a href="https://www.vetsfarma.com/contact-us/" class="">Contact Us</a></li>
+</ul>
+					</div>
+
+                    
+                    <a class="mobile-toggle"><i class="fa fa-reorder"></i></a>
+
+                    <div class="block-nowrap">
+
+                        
+
+
+    <div class="searchform-popup">
+
+
+
+        <a class="search-toggle"><i class="fa fa-search"></i></a>
+
+
+
+        
+
+
+    <form action="https://www.vetsfarma.com/" method="get"
+
+
+
+        class="searchform ">
+
+
+
+        <fieldset>
+
+
+
+            <span class="text"><input name="s" id="s" type="text" value="" placeholder="Search&hellip;" autocomplete="off" /></span>
+
+
+
+            
+
+
+            <span class="button-wrap"><button class="btn btn-special" title="Search" type="submit"><i class="fa fa-search"></i></button></span>
+
+
+
+        </fieldset>
+
+
+
+    </form>
+
+
+
+    
+
+
+    </div>
+
+
+
+    
+                    </div>
+
+
+
+                    
+                </div>
+
+    
+
+                
+
+
+            </div>
+
+			
+
+        </div>
+
+    </div>
+
+</header>
+<script>
+/*jQuery( document ).ready(function() {
+    console.log( "ready!" );
+  var tabHtml = jQuery(".breadcrumb").html();
+	jQuery(".breadcrumb").html(tabHtml.replace(/,/g , ' / '));
+}); */ 
+</script>
+                            </div><!-- end header wrapper -->
+        
+        
+        
+
+    
+    <section class="page-top page-header-4">
+        
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 clearfix">
+            <div class="pt-left">
+                <h1 class="page-title">Products</h1>
+                
+            </div>
+            
+                <div class="breadcrumbs-wrap pt-right">
+                    <ul class="breadcrumb"><li class="home"itemscope itemtype="http://schema.org/BreadcrumbList"><a itemprop="url" href="https://www.vetsfarma.com" title="Go to Home Page"><span itemprop="title">Home</span></a><i class="delimiter"></i></li><li><span itemprop="title">Products</span></li></ul>
+                </div>
+            
+            
+        </div>
+    </div>
+</div>
+    </section>
+    
+
+        <div id="main" class="column2 column2-left-sidebar boxed"><!-- main -->
+
+            
+                        <div class="container">
+            	                        <div class="row main-content-wrap">
+
+            <!-- main content -->
+            <div class="main-content col-md-9">
+
+                            
+
+
+
+
+	<div id="primary" class="content-area"><main id="main" class="site-main" role="main">
+
+
+
+
+		
+
+
+
+
+        
+
+
+
+
+		
+
+
+
+
+            <div class="shop-loop-before clearfix">
+
+
+			<div class="woocommerce-notices-wrapper"></div>
+<form class="woocommerce-ordering" method="get">
+    <label>Sort By: </label>
+    <select name="orderby" class="orderby">
+		
+			<option value="menu_order"  selected='selected'>Default sorting</option>
+		
+			<option value="popularity" >Sort by popularity</option>
+		
+			<option value="date" >Sort by latest</option>
+		
+			<option value="price" >Sort by price: low to high</option>
+		
+			<option value="price-desc" >Sort by price: high to low</option>
+		
+	</select>
+	
+</form>    <div class="gridlist-toggle">
+        <a href="#" id="grid" title="Grid View"></a><a href="#" id="list" title="List View"></a>
+    </div>
+
+<nav class="woocommerce-pagination">
+    <form class="woocommerce-viewing" method="get">
+        <label>Show: </label>
+        <select name="count" class="count">
+            
+                <option value="24"  selected='selected'>24</option>
+            
+        </select>
+        <input type="hidden" name="paged" value=""/>
+        
+    </form>
+	<ul class='page-numbers'>
+	<li><span aria-current="page" class="page-numbers current">1</span></li>
+	<li><a class="page-numbers" href="https://www.vetsfarma.com/shop/page/2/">2</a></li>
+	<li><a class="page-numbers" href="https://www.vetsfarma.com/shop/page/3/">3</a></li>
+	<li><a class="page-numbers" href="https://www.vetsfarma.com/shop/page/4/">4</a></li>
+	<li><a class="next page-numbers" href="https://www.vetsfarma.com/shop/page/2/"></a></li>
+</ul>
+
+</nav>
+
+
+            </div>
+
+
+
+
+
+            <div class="archive-products">
+
+
+
+
+
+                
+<ul class="products pcols-lg-3 pcols-md-3 pcols-xs-2 pcols-ls-1 pwidth-lg-3 pwidth-md-3 pwidth-xs-2 pwidth-ls-1">
+
+
+
+
+                    
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="product-first pcols-lg-first pcols-md-first pcols-xs-first post-220 product type-product status-publish has-post-thumbnail product_cat-acidifier pa_country-bangladesh pa_country-india pa_country-nepal pa_country-philippines first instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/poultry/acidifier/acimix/">
+            <div data-link="" class="viewcart  viewcart-220" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/07/p1-600x600.jpg" class=" wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/07/p1-600x600.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/07/p1-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/07/p1-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/07/p1-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/07/p1-768x768.jpg 768w, https://www.vetsfarma.com/wp-content/uploads/2017/07/p1-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/07/p1-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/07/p1-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/07/p1-50x50.jpg 50w, https://www.vetsfarma.com/wp-content/uploads/2017/07/p1-640x640.jpg 640w, https://www.vetsfarma.com/wp-content/uploads/2017/07/p1.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/poultry/acidifier/acimix/" data-quantity="1" data-product_id="220" data-product_sku="P-1" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="220" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/poultry/acidifier/acimix/"><h3 class="woocommerce-loop-product__title">Acimix</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <p>Acimix contains unique proprietory blend of buffered organic acids salts on silicate base which allows acids to release slowly.</p>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/poultry/acidifier/acimix/" data-quantity="1" data-product_id="220" data-product_sku="P-1" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="220" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="post-46 product type-product status-publish has-post-thumbnail product_cat-supportive pa_country-india  instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/supportive/adevet/">
+            <div data-link="" class="viewcart  viewcart-46" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/07/17-advet-600x600.jpg" class=" wp-post-image" alt="" decoding="async" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/07/17-advet.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/07/17-advet-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/07/17-advet-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/07/17-advet-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/07/17-advet-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/07/17-advet-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/07/17-advet-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/07/17-advet-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/supportive/adevet/" data-quantity="1" data-product_id="46" data-product_sku="P-2" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="46" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/supportive/adevet/"><h3 class="woocommerce-loop-product__title">Adevet</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table>
+<tbody>
+<tr>
+<td><strong>Each ml contains</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Vit. A ( as palmitate )</td>
+<td>I.P. 250000 I.U.</td>
+</tr>
+<tr>
+<td>Vit D3</td>
+<td>I.P. 25000 I.U.</td>
+</tr>
+<tr>
+<td>Vit E (as di-alpha-tocopheryl acetate)</td>
+<td>I.P. 100 I.U.</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/supportive/adevet/" data-quantity="1" data-product_id="46" data-product_sku="P-2" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="46" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-xs-first post-45 product type-product status-publish has-post-thumbnail product_cat-supportive pa_country-india last instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/supportive/adevet-h/">
+            <div data-link="" class="viewcart  viewcart-45" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/07/16-adevet-h-inj-600x600.jpg" class=" wp-post-image" alt="" decoding="async" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/07/16-adevet-h-inj.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/07/16-adevet-h-inj-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/07/16-adevet-h-inj-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/07/16-adevet-h-inj-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/07/16-adevet-h-inj-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/07/16-adevet-h-inj-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/07/16-adevet-h-inj-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/07/16-adevet-h-inj-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/supportive/adevet-h/" data-quantity="1" data-product_id="45" data-product_sku="P-3" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="45" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/supportive/adevet-h/"><h3 class="woocommerce-loop-product__title">Adevet – H</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table>
+<tbody>
+<tr>
+<td><strong>Each ml contains</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Vit. A ( as palmitate )</td>
+<td>I.P. 250000 I.U.</td>
+</tr>
+<tr>
+<td>Vit D3</td>
+<td>I.P. 25000 I.U.</td>
+</tr>
+<tr>
+<td>Vit E (as di-alpha-tocopheryl acetate)</td>
+<td>I.P. 100 I.U.</td>
+</tr>
+<tr>
+<td>Biotin</td>
+<td>USP. 250 mcg.</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/supportive/adevet-h/" data-quantity="1" data-product_id="45" data-product_sku="P-3" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="45" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-lg-first pcols-md-first post-350 product type-product status-publish has-post-thumbnail product_cat-anthelmintics pa_country-india pa_country-oman first instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/alzolvet/">
+            <div data-link="" class="viewcart  viewcart-350" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/alzolvet/" data-quantity="1" data-product_id="350" data-product_sku="P-6" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="350" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/alzolvet/"><h3 class="woocommerce-loop-product__title">Alzolvet</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <p>Powder : Albendazole I.P. 5 % w / w</p>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/alzolvet/" data-quantity="1" data-product_id="350" data-product_sku="P-6" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="350" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-xs-first post-352 product type-product status-publish has-post-thumbnail product_cat-anthelmintics pa_country-india pa_country-oman  instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/alzolvet-bolus/">
+            <div data-link="" class="viewcart  viewcart-352" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/10/17-Alzol-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/alzolvet-bolus/" data-quantity="1" data-product_id="352" data-product_sku="P-8" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="352" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/alzolvet-bolus/"><h3 class="woocommerce-loop-product__title">Alzolvet Bolus</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <p>Bolus: Albendazole I.P. 1.5 g &amp; 3.0</p>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/alzolvet-bolus/" data-quantity="1" data-product_id="352" data-product_sku="P-8" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="352" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="post-252 product type-product status-publish has-post-thumbnail product_cat-antibacterial-antibiotic product_cat-antibacterial-antibiotics-poultry pa_country-india pa_country-philippines last instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/amikin/">
+            <div data-link="" class="viewcart  viewcart-252" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/9-Amikin-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/9-Amikin.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/9-Amikin-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/9-Amikin-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/9-Amikin-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/9-Amikin-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/9-Amikin-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/9-Amikin-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/9-Amikin-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/amikin/" data-quantity="1" data-product_id="252" data-product_sku="P-4" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="252" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/amikin/"><h3 class="woocommerce-loop-product__title">Amikin</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <p>Each ml contains Amikacin sulphate   : <strong>  </strong> I.P. 250mg</p>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/amikin/" data-quantity="1" data-product_id="252" data-product_sku="P-4" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="252" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-lg-first pcols-md-first pcols-xs-first post-897 product type-product status-publish has-post-thumbnail product_cat-anthelmintics first instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/amitaz/">
+            <div data-link="" class="viewcart  viewcart-897" title="View Cart"></div><div class="inner"><img width="300" height="300" src="https://www.vetsfarma.com/wp-content/uploads/2018/12/Amitraz-vet-pack-300x300-2.png" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2018/12/Amitraz-vet-pack-300x300-2.png 300w, https://www.vetsfarma.com/wp-content/uploads/2018/12/Amitraz-vet-pack-300x300-2-100x100.png 100w, https://www.vetsfarma.com/wp-content/uploads/2018/12/Amitraz-vet-pack-300x300-2-150x150.png 150w, https://www.vetsfarma.com/wp-content/uploads/2018/12/Amitraz-vet-pack-300x300-2-85x85.png 85w, https://www.vetsfarma.com/wp-content/uploads/2018/12/Amitraz-vet-pack-300x300-2-50x50.png 50w" sizes="(max-width: 300px) 100vw, 300px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/amitaz/" data-quantity="1" data-product_id="897" data-product_sku="" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="897" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/amitaz/"><h3 class="woocommerce-loop-product__title">AMITAZ</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <p>Broad spectrum ectoparasiticide against ticks, Mange mites, lice and keds Composition: Each ml contains: Amitraz B.P. Vet. : 12.5 % w/v</p>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/amitaz/" data-quantity="1" data-product_id="897" data-product_sku="" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="897" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="post-816 product type-product status-publish has-post-thumbnail product_cat-feed-supplement pa_country-india  instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/anaboost/">
+            <div data-link="" class="viewcart  viewcart-816" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2018/01/anaboost-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2018/01/anaboost.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2018/01/anaboost-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2018/01/anaboost-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2018/01/anaboost-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2018/01/anaboost-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2018/01/anaboost-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2018/01/anaboost-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2018/01/anaboost-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/anaboost/" data-quantity="1" data-product_id="816" data-product_sku="P-80" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="816" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/anaboost/"><h3 class="woocommerce-loop-product__title">Anaboost</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/anaboost/" data-quantity="1" data-product_id="816" data-product_sku="P-80" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="816" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-xs-first post-268 product type-product status-publish has-post-thumbnail product_cat-metabolic-stimulant pa_country-india pa_country-philippines pa_country-vietnam last instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/metabolic-stimulant/beejet/">
+            <div data-link="" class="viewcart  viewcart-268" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/12-BEEJET-inj-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/12-BEEJET-inj.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/12-BEEJET-inj-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/12-BEEJET-inj-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/12-BEEJET-inj-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/12-BEEJET-inj-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/12-BEEJET-inj-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/12-BEEJET-inj-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/12-BEEJET-inj-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/metabolic-stimulant/beejet/" data-quantity="1" data-product_id="268" data-product_sku="P-9" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="268" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/metabolic-stimulant/beejet/"><h3 class="woocommerce-loop-product__title">Beejet</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td><strong>Each ml contains :</strong></td>
+</tr>
+<tr>
+<td>Thiamine HCl ( vit B1)</td>
+<td>I.P. 33.30 mg</td>
+</tr>
+<tr>
+<td>Riboflavin 5 phosphate sodium (vit. B2)<strong><br />
+</strong></td>
+<td>I.P. 1.66 mg</td>
+</tr>
+<tr>
+<td>Niacinamide ( Vit. B3 )</td>
+<td>I.P. 33.30 mg</td>
+</tr>
+<tr>
+<td>D- panthenol (Vit. B5)</td>
+<td>I.P. 1.66 mg</td>
+</tr>
+<tr>
+<td>Pyridoxine ( VIT. B6)</td>
+<td>I.P. 3.30 mg</td>
+</tr>
+<tr>
+<td>Cynocobalamine (Vit. B12)</td>
+<td>I.P. 33.30mcg</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/metabolic-stimulant/beejet/" data-quantity="1" data-product_id="268" data-product_sku="P-9" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="268" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-lg-first pcols-md-first post-270 product type-product status-publish has-post-thumbnail product_cat-supportive pa_country-india pa_country-vietnam first instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/supportive/cal-bd/">
+            <div data-link="" class="viewcart  viewcart-270" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/14-Cal-bd-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/14-Cal-bd.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/14-Cal-bd-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/14-Cal-bd-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/14-Cal-bd-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/14-Cal-bd-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/14-Cal-bd-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/14-Cal-bd-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/14-Cal-bd-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/supportive/cal-bd/" data-quantity="1" data-product_id="270" data-product_sku="P-10" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="270" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/supportive/cal-bd/"><h3 class="woocommerce-loop-product__title">Cal – BD</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td><strong>Each ml contains </strong></td>
+</tr>
+<tr>
+<td>Calcium levulinate</td>
+<td>IP 76.4 mg</td>
+</tr>
+<tr>
+<td>Vitamin B12</td>
+<td>IP 50.0 mcg</td>
+</tr>
+<tr>
+<td>Vitamin D3</td>
+<td>IP 5000 IU</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/supportive/cal-bd/" data-quantity="1" data-product_id="270" data-product_sku="P-10" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="270" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-xs-first post-273 product type-product status-publish has-post-thumbnail product_cat-feed-supplement pa_country-bangladesh pa_country-india  instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/calfosvet/">
+            <div data-link="" class="viewcart  viewcart-273" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/p-11-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/p-11-600x600.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-11-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-11-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-11-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-11-768x768.jpg 768w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-11-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-11-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-11-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-11-50x50.jpg 50w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-11-640x640.jpg 640w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-11.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/calfosvet/" data-quantity="1" data-product_id="273" data-product_sku="P-11" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="273" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/calfosvet/"><h3 class="woocommerce-loop-product__title">Calfosvet</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td>Nutritional value per 100 ml.</td>
+</tr>
+<tr>
+<td>Calcium</td>
+<td>1700 mg</td>
+</tr>
+<tr>
+<td>Phosphorus</td>
+<td>850 mg</td>
+</tr>
+<tr>
+<td>Vitamin D3</td>
+<td>8000 IU</td>
+</tr>
+<tr>
+<td>Vitamin B12</td>
+<td>100mcg</td>
+</tr>
+<tr>
+<td>Carbohydrates</td>
+<td>40000 mg</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/calfosvet/" data-quantity="1" data-product_id="273" data-product_sku="P-11" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="273" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="post-274 product type-product status-publish has-post-thumbnail product_cat-poultry-feed-additives pa_country-bangladesh pa_country-india pa_country-nepal pa_country-philippines last instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/poultry/poultry-feed-additives/calfosvet-2/">
+            <div data-link="" class="viewcart  viewcart-274" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/p-12-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/p-12-600x600.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-12-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-12-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-12-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-12-768x768.jpg 768w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-12-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-12-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-12-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-12-50x50.jpg 50w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-12-640x640.jpg 640w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-12.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/poultry/poultry-feed-additives/calfosvet-2/" data-quantity="1" data-product_id="274" data-product_sku="P-12" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="274" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/poultry/poultry-feed-additives/calfosvet-2/"><h3 class="woocommerce-loop-product__title">Calfosvet</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td><strong>Nutritional value per 100 ml.</strong></td>
+</tr>
+<tr>
+<td>Calcium</td>
+<td>1700 mg</td>
+</tr>
+<tr>
+<td>Phosphorus</td>
+<td>850 mg</td>
+</tr>
+<tr>
+<td>Vitamin D3</td>
+<td>8000 IU</td>
+</tr>
+<tr>
+<td>Vitamin B12</td>
+<td>100mcg</td>
+</tr>
+<tr>
+<td>Carbohydrates</td>
+<td>40000 mg</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/poultry/poultry-feed-additives/calfosvet-2/" data-quantity="1" data-product_id="274" data-product_sku="P-12" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="274" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-lg-first pcols-md-first pcols-xs-first post-264 product type-product status-publish product_cat-poultry-feed-additives pa_country-bangladesh pa_country-india pa_country-nepal pa_country-oman first instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/poultry/poultry-feed-additives/calfosvet-cs/">
+            <div data-link="" class="viewcart  viewcart-264" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/woocommerce-placeholder.png" class="woocommerce-placeholder wp-post-image" alt="Placeholder" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/woocommerce-placeholder.png 1200w, https://www.vetsfarma.com/wp-content/uploads/woocommerce-placeholder-600x600.png 600w, https://www.vetsfarma.com/wp-content/uploads/woocommerce-placeholder-100x100.png 100w, https://www.vetsfarma.com/wp-content/uploads/woocommerce-placeholder-150x150.png 150w, https://www.vetsfarma.com/wp-content/uploads/woocommerce-placeholder-300x300.png 300w, https://www.vetsfarma.com/wp-content/uploads/woocommerce-placeholder-768x768.png 768w, https://www.vetsfarma.com/wp-content/uploads/woocommerce-placeholder-1024x1024.png 1024w, https://www.vetsfarma.com/wp-content/uploads/woocommerce-placeholder-560x560.png 560w, https://www.vetsfarma.com/wp-content/uploads/woocommerce-placeholder-367x367.png 367w, https://www.vetsfarma.com/wp-content/uploads/woocommerce-placeholder-85x85.png 85w, https://www.vetsfarma.com/wp-content/uploads/woocommerce-placeholder-50x50.png 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/poultry/poultry-feed-additives/calfosvet-cs/" data-quantity="1" data-product_id="264" data-product_sku="P-14" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="264" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/poultry/poultry-feed-additives/calfosvet-cs/"><h3 class="woocommerce-loop-product__title">Calfosvet CS</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td><strong>Each 1000ml contains :</strong></td>
+</tr>
+<tr>
+<td>Calcium</td>
+<td>18000 mg.</td>
+</tr>
+<tr>
+<td>Phosphorus</td>
+<td>9000 mg.</td>
+</tr>
+<tr>
+<td>Vitamin D3</td>
+<td>80000 I.U.</td>
+</tr>
+<tr>
+<td>Vitamin B12</td>
+<td>1000 mcg.</td>
+</tr>
+<tr>
+<td>Biotin</td>
+<td>300 mcg.</td>
+</tr>
+<tr>
+<td>D-panthen</td>
+<td>25 mg.</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/poultry/poultry-feed-additives/calfosvet-cs/" data-quantity="1" data-product_id="264" data-product_sku="P-14" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="264" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="post-275 product type-product status-publish has-post-thumbnail product_cat-feed-supplement pa_country-bangladesh pa_country-india pa_country-nepal  instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/calfosvet-ds/">
+            <div data-link="" class="viewcart  viewcart-275" title="View Cart"></div><div class="inner img-effect"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-vetral-600x600.jpg" class="hover-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-vetral.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-vetral-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-vetral-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-vetral-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-vetral-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-vetral-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-vetral-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/4-calfosvet-ds-vetral-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/calfosvet-ds/" data-quantity="1" data-product_id="275" data-product_sku="P-13" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="275" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/calfosvet-ds/"><h3 class="woocommerce-loop-product__title">Calfosvet DS+</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td><strong>Nutritional value per 100 ml.</strong></td>
+</tr>
+<tr>
+<td>Calcium</td>
+<td>3500mg</td>
+</tr>
+<tr>
+<td>Phosphorus</td>
+<td>1750mg</td>
+</tr>
+<tr>
+<td>Vitamin D3</td>
+<td>17500I.U.</td>
+</tr>
+<tr>
+<td>Vitamin B12</td>
+<td>200mcg</td>
+</tr>
+<tr>
+<td>Carbohydrates</td>
+<td>50000mg</td>
+</tr>
+<tr>
+<td>Biotin</td>
+<td>400mcg</td>
+</tr>
+<tr>
+<td>Protein Hydrolysate</td>
+<td>1000mg</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/calfosvet-ds/" data-quantity="1" data-product_id="275" data-product_sku="P-13" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="275" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-xs-first post-1573 product type-product status-publish has-post-thumbnail product_cat-animal-healthcare-company last instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/calveda-gel/">
+            <div data-link="" class="viewcart  viewcart-1573" title="View Cart"></div><div class="inner"><img width="600" height="599" src="https://www.vetsfarma.com/wp-content/uploads/2023/02/IMG-20230210-WA0008-600x599.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2023/02/IMG-20230210-WA0008-600x599.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2023/02/IMG-20230210-WA0008-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2023/02/IMG-20230210-WA0008-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2023/02/IMG-20230210-WA0008-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2023/02/IMG-20230210-WA0008-768x767.jpg 768w, https://www.vetsfarma.com/wp-content/uploads/2023/02/IMG-20230210-WA0008-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2023/02/IMG-20230210-WA0008-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2023/02/IMG-20230210-WA0008-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2023/02/IMG-20230210-WA0008-50x50.jpg 50w, https://www.vetsfarma.com/wp-content/uploads/2023/02/IMG-20230210-WA0008.jpg 1024w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/calveda-gel/" data-quantity="1" data-product_id="1573" data-product_sku="" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="1573" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/calveda-gel/"><h3 class="woocommerce-loop-product__title">Calveda Gel</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<strong>A nutritional supplement for prevention of Subclinical and Transient hypocalcemia in dairy animals</strong><br />
+</tr>
+<tr>
+<td><strong>Nutritional Value Per 300 ml</strong></td>
+<p><br />
+</p></tr>
+<tr>
+<td>Ionic Calcium &#8211; 43000 mg</td>
+</tr>
+<tr>
+<td>Vitamin D3 &#8211; 25000 IU</td>
+</tr>
+<tr>
+<td>Magnesium gluconate &#8211; 2500 mg</td>
+</tr>
+<tr>
+<td>Jivanti Extract &#8211; 500 mg</td>
+</tr>
+<tr>
+<td>Shatavari Extract &#8211; 300 mg</td>
+</tr>
+<tr>
+<td>Jatamasi Extract &#8211; 200 mg</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/calveda-gel/" data-quantity="1" data-product_id="1573" data-product_sku="" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="1573" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-lg-first pcols-md-first post-262 product type-product status-publish has-post-thumbnail product_cat-antibacterial-antibiotic pa_country-india first instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/ceftovet/">
+            <div data-link="" class="viewcart  viewcart-262" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/10-ceftovet-inj-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/10-ceftovet-inj.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/10-ceftovet-inj-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/10-ceftovet-inj-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/10-ceftovet-inj-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/10-ceftovet-inj-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/10-ceftovet-inj-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/10-ceftovet-inj-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/10-ceftovet-inj-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/ceftovet/" data-quantity="1" data-product_id="262" data-product_sku="P-18" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="262" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/ceftovet/"><h3 class="woocommerce-loop-product__title">Ceftovet</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td><strong>Each vial contains</strong></td>
+</tr>
+<tr>
+<td>Ceftriaxone Sodium</td>
+<td>U.S.P. 3.0 g equi. to Ceftriaxone</td>
+</tr>
+<tr>
+<td>Sulbactam Sodium</td>
+<td>U.S.P. equi. to anhydrous Sulbactam 1.5 g</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/ceftovet/" data-quantity="1" data-product_id="262" data-product_sku="P-18" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="262" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-xs-first post-353 product type-product status-publish has-post-thumbnail product_cat-antibacterial-antibiotic pa_country-india  instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/cephatin-im/">
+            <div data-link="" class="viewcart  viewcart-353" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/1-Cephatin-IM-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/1-Cephatin-IM.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/1-Cephatin-IM-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/1-Cephatin-IM-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/1-Cephatin-IM-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/1-Cephatin-IM-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/1-Cephatin-IM-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/1-Cephatin-IM-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/1-Cephatin-IM-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/cephatin-im/" data-quantity="1" data-product_id="353" data-product_sku="P-16" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="353" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/cephatin-im/"><h3 class="woocommerce-loop-product__title">Cephatin IM</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td><strong>Each 10 ml disposable pre filled syringe contains:</strong></td>
+</tr>
+<tr>
+<td>Cefoperazone Sodium I.P. (sterile) eqv. to Cefoperazone 250 mg<strong><br />
+</strong></td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/cephatin-im/" data-quantity="1" data-product_id="353" data-product_sku="P-16" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="353" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="post-265 product type-product status-publish has-post-thumbnail product_cat-antibacterial-antibiotic product_cat-antibacterial-antibiotics-poultry pa_country-india last instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/cephatin-2/">
+            <div data-link="" class="viewcart  viewcart-265" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/2-Cephatin-inj-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/2-Cephatin-inj.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/2-Cephatin-inj-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/2-Cephatin-inj-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/2-Cephatin-inj-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/2-Cephatin-inj-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/2-Cephatin-inj-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/2-Cephatin-inj-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/2-Cephatin-inj-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/cephatin-2/" data-quantity="1" data-product_id="265" data-product_sku="P-15" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="265" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/cephatin-2/"><h3 class="woocommerce-loop-product__title">Cephatin Injection</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td><strong>Each vial contains</strong></td>
+</tr>
+<tr>
+<td>Cefoperazone Sodium</td>
+<td>I.P. 3.0 g eqv. to Cefoperazone</td>
+</tr>
+<tr>
+<td>Sulbactam Sodium</td>
+<td>U.S.P. 1.5g eqv. to anhydrous sulbactam</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/cephatin-2/" data-quantity="1" data-product_id="265" data-product_sku="P-15" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="265" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-lg-first pcols-md-first pcols-xs-first post-258 product type-product status-publish has-post-thumbnail product_cat-anthelmintics pa_country-india first instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/clozent/">
+            <div data-link="" class="viewcart  viewcart-258" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/8-Clozent-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/8-Clozent.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/8-Clozent-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/8-Clozent-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/8-Clozent-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/8-Clozent-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/8-Clozent-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/8-Clozent-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/8-Clozent-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/clozent/" data-quantity="1" data-product_id="258" data-product_sku="P-21" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="258" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/clozent/"><h3 class="woocommerce-loop-product__title">Clozent</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td><strong>Each mL contains</strong></td>
+</tr>
+<tr>
+<td>Closantel Sodium Dihydrate BP (Vet) equivalent to Closantel</td>
+<td>150 mg</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/clozent/" data-quantity="1" data-product_id="258" data-product_sku="P-21" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="258" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="post-260 product type-product status-publish has-post-thumbnail product_cat-uncategorized pa_country-india pa_country-philippines  instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/uncategorized/coccinil-plus/">
+            <div data-link="" class="viewcart  viewcart-260" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/p-19-600x600.png" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/p-19-600x600.png 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-19-100x100.png 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-19-150x150.png 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-19-300x300.png 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-19-768x768.png 768w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-19-560x560.png 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-19-367x367.png 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-19-85x85.png 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-19-50x50.png 50w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-19-640x640.png 640w, https://www.vetsfarma.com/wp-content/uploads/2017/09/p-19.png 800w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/uncategorized/coccinil-plus/" data-quantity="1" data-product_id="260" data-product_sku="P-19" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="260" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/uncategorized/coccinil-plus/"><h3 class="woocommerce-loop-product__title">Coccinil Plus</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td>Amprolium HCl I.P. Vet.</td>
+<td>20% w/w</td>
+</tr>
+<tr>
+<td>Sulphaquinoxaline I.P. Vet.</td>
+<td>12% w/w</td>
+</tr>
+<tr>
+<td>Ethopabate I.P. Vet.</td>
+<td>1% w/w</td>
+</tr>
+<tr>
+<td>Pyrimethamine I.P.</td>
+<td>1% w/w</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/uncategorized/coccinil-plus/" data-quantity="1" data-product_id="260" data-product_sku="P-19" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="260" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-xs-first post-255 product type-product status-publish has-post-thumbnail product_cat-antibacterial-antibiotic pa_country-india last instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/curacin-oz/">
+            <div data-link="" class="viewcart  viewcart-255" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/7-Curacin-oz-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/7-Curacin-oz.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/7-Curacin-oz-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/7-Curacin-oz-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/7-Curacin-oz-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/7-Curacin-oz-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/7-Curacin-oz-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/7-Curacin-oz-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/7-Curacin-oz-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/curacin-oz/" data-quantity="1" data-product_id="255" data-product_sku="P-23" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="255" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/curacin-oz/"><h3 class="woocommerce-loop-product__title">Curacin – OZ</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td><strong>Each 5 ml contains</strong></td>
+</tr>
+<tr>
+<td>Ofloxacin</td>
+<td>USP 50 mg</td>
+</tr>
+<tr>
+<td>Ornidazole</td>
+<td>125 mg</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/curacin-oz/" data-quantity="1" data-product_id="255" data-product_sku="P-23" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="255" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-lg-first pcols-md-first post-1037 product type-product status-publish has-post-thumbnail product_cat-antibacterial-antibiotic pa_country-india first instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/curacin-oz-500ml/">
+            <div data-link="" class="viewcart  viewcart-1037" title="View Cart"></div><div class="inner"><img width="300" height="300" src="https://www.vetsfarma.com/wp-content/uploads/2019/04/vets-300x300.png" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2019/04/vets-300x300.png 300w, https://www.vetsfarma.com/wp-content/uploads/2019/04/vets-100x100.png 100w, https://www.vetsfarma.com/wp-content/uploads/2019/04/vets-150x150.png 150w, https://www.vetsfarma.com/wp-content/uploads/2019/04/vets-367x367.png 367w, https://www.vetsfarma.com/wp-content/uploads/2019/04/vets-85x85.png 85w, https://www.vetsfarma.com/wp-content/uploads/2019/04/vets-50x50.png 50w, https://www.vetsfarma.com/wp-content/uploads/2019/04/vets.png 426w" sizes="(max-width: 300px) 100vw, 300px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/curacin-oz-500ml/" data-quantity="1" data-product_id="1037" data-product_sku="P-23-1" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="1037" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/curacin-oz-500ml/"><h3 class="woocommerce-loop-product__title">Curacin – OZ (500ml)</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td><strong>Each 5 ml contains</strong></td>
+</tr>
+<tr>
+<td>Ofloxacin</td>
+<td>USP 50 mg</td>
+</tr>
+<tr>
+<td>Ornidazole</td>
+<td>125 mg</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/curacin-oz-500ml/" data-quantity="1" data-product_id="1037" data-product_sku="P-23-1" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="1037" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="pcols-xs-first post-256 product type-product status-publish has-post-thumbnail product_cat-antibacterial-antibiotic pa_country-india  instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/curacin-tz/">
+            <div data-link="" class="viewcart  viewcart-256" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/16-Curacin-TZ-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/16-Curacin-TZ.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/16-Curacin-TZ-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/16-Curacin-TZ-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/16-Curacin-TZ-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/16-Curacin-TZ-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/16-Curacin-TZ-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/16-Curacin-TZ-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/16-Curacin-TZ-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/curacin-tz/" data-quantity="1" data-product_id="256" data-product_sku="P-22" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="256" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/curacin-tz/"><h3 class="woocommerce-loop-product__title">Curacin – TZ</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td><strong>Each bolus contains</strong></td>
+</tr>
+<tr>
+<td>Ciprofloxacin</td>
+<td>IP 1.5 gm</td>
+</tr>
+<tr>
+<td>Tinidazole</td>
+<td>IP 1.8 gm</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/curacin-tz/" data-quantity="1" data-product_id="256" data-product_sku="P-22" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="256" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                        
+<li class="post-253 product type-product status-publish has-post-thumbnail product_cat-antibacterial-antibiotic pa_country-india pa_country-nepal last instock shipping-taxable product-type-simple">
+	
+
+    <div class="product-image">						
+        <a  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/diardon/">
+            <div data-link="" class="viewcart  viewcart-253" title="View Cart"></div><div class="inner"><img width="600" height="600" src="https://www.vetsfarma.com/wp-content/uploads/2017/09/17-Diardon-600x600.jpg" class=" wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.vetsfarma.com/wp-content/uploads/2017/09/17-Diardon.jpg 600w, https://www.vetsfarma.com/wp-content/uploads/2017/09/17-Diardon-100x100.jpg 100w, https://www.vetsfarma.com/wp-content/uploads/2017/09/17-Diardon-150x150.jpg 150w, https://www.vetsfarma.com/wp-content/uploads/2017/09/17-Diardon-300x300.jpg 300w, https://www.vetsfarma.com/wp-content/uploads/2017/09/17-Diardon-560x560.jpg 560w, https://www.vetsfarma.com/wp-content/uploads/2017/09/17-Diardon-367x367.jpg 367w, https://www.vetsfarma.com/wp-content/uploads/2017/09/17-Diardon-85x85.jpg 85w, https://www.vetsfarma.com/wp-content/uploads/2017/09/17-Diardon-50x50.jpg 50w" sizes="(max-width: 600px) 100vw, 600px" /></div>
+        </a>
+
+        <div class="links-on-image">
+            <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/diardon/" data-quantity="1" data-product_id="253" data-product_sku="P-24" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="253" title="Quick View">Quick View</div>    </div>
+</div>
+        </div>
+    </div>
+	
+    
+        <a class="product-loop-title"  href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/diardon/"><h3 class="woocommerce-loop-product__title">Diardon</h3></a>
+    
+
+    
+
+<div class="rating-wrap">
+    <span class="rating-before"><span class="rating-line"></span></span>
+    <div class="rating-content"><div class="star-rating" title="0"><span style="width:0%"><strong class="rating">0</strong> out of 5</span></div></div>
+    <span class="rating-after"><span class="rating-line"></span></span>
+</div>
+
+    <div class="description">
+        <table border="0">
+<tbody>
+<tr>
+<td><strong>Each bolus contains</strong></td>
+</tr>
+<tr>
+<td>Metronidazole</td>
+<td>I.P. 1gm</td>
+</tr>
+<tr>
+<td>Furazolidone</td>
+<td>I.P. 200mg</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    
+
+
+    <div class="add-links-wrap">
+    <div class="add-links  clearfix">
+        <a rel="nofollow" href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/diardon/" data-quantity="1" data-product_id="253" data-product_sku="P-24" class="viewcart-style-1 button product_type_simple add_to_cart_read_more">Read more</a><div class="quickview" data-id="253" title="Quick View">Quick View</div>    </div>
+</div>
+</li>
+
+
+
+
+                    
+
+
+
+
+                
+</ul>
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="shop-loop-after clearfix">
+
+
+			
+<nav class="woocommerce-pagination">
+    <form class="woocommerce-viewing" method="get">
+        <label>Show: </label>
+        <select name="count" class="count">
+            
+                <option value="24"  selected='selected'>24</option>
+            
+        </select>
+        <input type="hidden" name="paged" value=""/>
+        
+    </form>
+	<ul class='page-numbers'>
+	<li><span aria-current="page" class="page-numbers current">1</span></li>
+	<li><a class="page-numbers" href="https://www.vetsfarma.com/shop/page/2/">2</a></li>
+	<li><a class="page-numbers" href="https://www.vetsfarma.com/shop/page/3/">3</a></li>
+	<li><a class="page-numbers" href="https://www.vetsfarma.com/shop/page/4/">4</a></li>
+	<li><a class="next page-numbers" href="https://www.vetsfarma.com/shop/page/2/"></a></li>
+</ul>
+
+</nav>
+
+
+            </div>
+
+
+
+
+
+        
+
+
+
+
+	</main></div>
+
+
+
+
+	
+
+
+
+</div><!-- end main content -->
+
+
+    <div class="col-md-3 sidebar left-sidebar mobile-hide-sidebar"><!-- main sidebar -->
+        
+        <div class="sidebar-content">
+            
+            <aside id="woocommerce_product_categories-3" class="widget woocommerce widget_product_categories"><h3 class="widget-title">CATEGORIES</h3><ul class="product-categories"><li class="cat-item cat-item-21 cat-parent"><a href="https://www.vetsfarma.com/animal-healthcare-company/">Livestock</a><ul class='children'>
+<li class="cat-item cat-item-31"><a href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/">Anthelmintics</a></li>
+<li class="cat-item cat-item-37"><a href="https://www.vetsfarma.com/animal-healthcare-company/anti-bloat/">Anti Bloat</a></li>
+<li class="cat-item cat-item-116"><a href="https://www.vetsfarma.com/animal-healthcare-company/anti-histaminic/">Anti-Histaminic</a></li>
+<li class="cat-item cat-item-76"><a href="https://www.vetsfarma.com/animal-healthcare-company/anti-inflammatory-analgesic-antipyretic/">Anti-inflammatory, Analgesic &amp; Antipyretic</a></li>
+<li class="cat-item cat-item-50"><a href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/">Antibacterial / Antibiotic</a></li>
+<li class="cat-item cat-item-119"><a href="https://www.vetsfarma.com/animal-healthcare-company/corticosteroids/">Corticosteroids</a></li>
+<li class="cat-item cat-item-114"><a href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/">Feed Supplement</a></li>
+<li class="cat-item cat-item-38"><a href="https://www.vetsfarma.com/animal-healthcare-company/herbals/">Herbals</a></li>
+<li class="cat-item cat-item-35"><a href="https://www.vetsfarma.com/animal-healthcare-company/hormones/">Hormones</a></li>
+<li class="cat-item cat-item-51"><a href="https://www.vetsfarma.com/animal-healthcare-company/metabolic-stimulant/">Metabolic stimulant</a></li>
+<li class="cat-item cat-item-123"><a href="https://www.vetsfarma.com/animal-healthcare-company/phytogenic-hepatotonic-feed-additive/">Phytogenic Hepatotonic Feed Additive</a></li>
+<li class="cat-item cat-item-64"><a href="https://www.vetsfarma.com/animal-healthcare-company/probiotic-combination/">Probiotic Combination</a></li>
+<li class="cat-item cat-item-34"><a href="https://www.vetsfarma.com/animal-healthcare-company/supportive/">Supportive</a></li>
+</ul>
+</li>
+<li class="cat-item cat-item-20 cat-parent"><a href="https://www.vetsfarma.com/poultry/">Poultry</a><ul class='children'>
+<li class="cat-item cat-item-48"><a href="https://www.vetsfarma.com/poultry/acidifier/">Acidifier</a></li>
+<li class="cat-item cat-item-113"><a href="https://www.vetsfarma.com/poultry/anti-inflammatory-analgesic-antipyretic-poultry/">Anti-inflammatory, Analgesic &amp; Antipyretic</a></li>
+<li class="cat-item cat-item-40"><a href="https://www.vetsfarma.com/poultry/antibacterial-antibiotics-poultry/">Antibacterial / Antibiotics</a></li>
+<li class="cat-item cat-item-126"><a href="https://www.vetsfarma.com/poultry/enzymes/">Enzymes</a></li>
+<li class="cat-item cat-item-97"><a href="https://www.vetsfarma.com/poultry/poultry-feed-additives/">Feed supplement</a></li>
+<li class="cat-item cat-item-121"><a href="https://www.vetsfarma.com/poultry/hepatatonic/">Hepatatonic</a></li>
+<li class="cat-item cat-item-95"><a href="https://www.vetsfarma.com/poultry/immunomodulator/">Immunomodulator</a></li>
+<li class="cat-item cat-item-125"><a href="https://www.vetsfarma.com/poultry/phytogenic-feed-additives-poultry/">Phytogenic Hepatotonic Feed Additive</a></li>
+<li class="cat-item cat-item-44"><a href="https://www.vetsfarma.com/poultry/supportive-poultry/">Supportive</a></li>
+<li class="cat-item cat-item-100"><a href="https://www.vetsfarma.com/poultry/toxin-binder/">Toxin Binder</a></li>
+</ul>
+</li>
+<li class="cat-item cat-item-124"><a href="https://www.vetsfarma.com/uncategorized/">Uncategorized</a></li>
+</ul></aside><div class="berocket_single_filter_widget berocket_single_filter_widget_1658 " data-id="1658" style=""><div class="bapf_sfilter bapf_ckbox bapf_ccolaps" data-op="OR" data-taxonomy="pa_country" data-name="COUNTRY" id="bapf_1"><div class="bapf_head bapf_colaps_togl"><h3 class="bapf_hascolarr">COUNTRY<i class="bapf_colaps_smb fa fa-chevron-up bapf_hide_mobile"></i></h3></div><div class="bapf_body"><ul><li><input data-name="Bangladesh" id="bapf_1_24" type="checkbox" value="24"><label for="bapf_1_24">Bangladesh</label></li><li><input data-name="Bhutan" id="bapf_1_27" type="checkbox" value="27"><label for="bapf_1_27">Bhutan</label></li><li><input data-name="India" id="bapf_1_22" type="checkbox" value="22"><label for="bapf_1_22">India</label></li><li><input data-name="Nepal" id="bapf_1_23" type="checkbox" value="23"><label for="bapf_1_23">Nepal</label></li><li><input data-name="Oman" id="bapf_1_26" type="checkbox" value="26"><label for="bapf_1_26">Oman</label></li><li><input data-name="Philippines" id="bapf_1_25" type="checkbox" value="25"><label for="bapf_1_25">Philippines</label></li><li><input data-name="Vietnam" id="bapf_1_117" type="checkbox" value="117"><label for="bapf_1_117">Vietnam</label></li></ul></div></div></div>
+        </div>
+        
+    </div><!-- end main sidebar -->
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+        
+
+        
+
+            
+
+            </div><!-- end main -->
+
+            
+
+            <div class="footer-wrapper ">
+
+                
+
+                    
+
+
+
+<div id="footer" class="footer-1">
+    
+        <div class="footer-main">
+            <div class="container">
+                
+
+                
+                    <div class="row">
+                        
+                                <div class="col-md-4">
+                                    <aside id="nav_menu-3" class="widget widget_nav_menu"><h3 class="widget-title">Livestock</h3><div class="menu-footer-livestock-menu-container"><ul id="menu-footer-livestock-menu" class="menu"><li id="menu-item-188" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-188"><a href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/">Anthelmintics</a></li>
+<li id="menu-item-588" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-588"><a href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/">Antibacterial / Antibiotic</a></li>
+<li id="menu-item-587" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-587"><a href="https://www.vetsfarma.com/animal-healthcare-company/anti-inflammatory-analgesic-antipyretic/">Anti-inflammatory, Analgesi &#038; Antipyretic</a></li>
+<li id="menu-item-194" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-194"><a href="https://www.vetsfarma.com/animal-healthcare-company/herbals/">Herbals</a></li>
+<li id="menu-item-195" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-195"><a href="https://www.vetsfarma.com/animal-healthcare-company/hormones/">Hormones</a></li>
+<li id="menu-item-589" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-589"><a href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/">Feed Supplement</a></li>
+<li id="menu-item-591" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-591"><a href="https://www.vetsfarma.com/animal-healthcare-company/probiotic-combination/">Probiotic Combination</a></li>
+<li id="menu-item-590" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-590"><a href="https://www.vetsfarma.com/animal-healthcare-company/metabolic-stimulant/">Metabolic stimulant</a></li>
+<li id="menu-item-196" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-196"><a href="https://www.vetsfarma.com/animal-healthcare-company/supportive/">Supportive</a></li>
+<li id="menu-item-189" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-189"><a href="https://www.vetsfarma.com/animal-healthcare-company/anti-bloat/">Anti Bloat</a></li>
+</ul></div></aside>
+                                </div>
+                            
+                                <div class="col-md-4">
+                                    <aside id="nav_menu-2" class="widget widget_nav_menu"><h3 class="widget-title">Poultry</h3><div class="menu-footer-poultry-menu-container"><ul id="menu-footer-poultry-menu" class="menu"><li id="menu-item-592" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-592"><a href="https://www.vetsfarma.com/poultry/acidifier/">Acidifier</a></li>
+<li id="menu-item-593" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-593"><a href="https://www.vetsfarma.com/poultry/anti-inflammatory-analgesic-antipyretic-poultry/">Anti-inflammatory, Analgesi &#038; Antipyretic</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-147"><a href="https://www.vetsfarma.com/poultry/antibacterial-antibiotics-poultry/">Antibacterial / Antibiotics</a></li>
+<li id="menu-item-594" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-594"><a href="https://www.vetsfarma.com/poultry/poultry-feed-additives/">Feed supplement</a></li>
+<li id="menu-item-595" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-595"><a href="https://www.vetsfarma.com/poultry/immunomodulator/">Immunomodulator</a></li>
+<li id="menu-item-151" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-151"><a href="https://www.vetsfarma.com/poultry/supportive-poultry/">Supportive</a></li>
+<li id="menu-item-596" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-596"><a href="https://www.vetsfarma.com/poultry/toxin-binder/">Toxin Binder</a></li>
+</ul></div></aside>
+                                </div>
+                            
+                                <div class="col-md-4">
+                                    <aside id="contact-info-widget-3" class="widget contact-info"><h3 class="widget-title">CONTACT INFORMATION</h3>        <div class="contact-info contact-info-block">
+                        <ul class="contact-details">
+                <li><i class="fa fa-map-marker"></i> <strong>Address::</strong> <span>VETS HOUSE<br />90-91, Urban Estate, Phase-1,<br />Jalandhar, Punjab, India<br />PIN -144022</span></li>                <li><i class="fa fa-phone"></i> <strong>Phone::</strong> <span>+91-181-435-3031-34</span></li>                <li><i class="fa fa-envelope"></i> <strong>Email::</strong> <span><a href="mailto:vets@vetsfarma.com">vets@vetsfarma.com</a></span></li>                            </ul>
+                    </div>
+
+        </aside><aside id="follow-us-widget-3" class="widget follow-us"><h3 class="widget-title">Connect With Us</h3>        <div class="share-links default-skin">
+                        <a href="https://www.facebook.com/vetsfarmaltd"  target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook" class="share-facebook">Facebook</a><a href="https://www.youtube.com/channel/UCCqEmiTHF_7ji9FoKOhTeZg"  target="_blank" data-toggle="tooltip" data-placement="bottom" title="Youtube" class="share-youtube">Youtube</a>                    </div>
+
+        </aside>
+                                </div>
+                            
+                    </div>
+                
+
+                
+            </div>
+        </div>
+    
+
+    
+    <div class="footer-bottom">
+        <div class="container">
+            
+
+            
+                <div class="footer-center">
+                    
+                    © Copyright 2017. Vetsfarma Ltd. All Rights Reserved. Veterinary medicine manufacturer in india
+                </div>
+            
+
+            
+        </div>
+    </div>
+    
+</div>
+
+                
+
+            </div>
+
+        
+
+    </div><!-- end wrapper -->
+    
+
+
+<div class="panel-overlay"></div>
+<div id="nav-panel" class="">
+    <div class="menu-wrap"><ul id="menu-main-menu-1" class="mobile-menu accordion-menu"><li id="accordion-menu-item-506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home "><a href="https://www.vetsfarma.com/" rel="nofollow" class=""><i class="fa fa-home"></i></a></li>
+<li id="accordion-menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has-sub"><a href="https://www.vetsfarma.com/our-company/" rel="nofollow" class="">Our Company</a>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://www.vetsfarma.com/about-us/" rel="nofollow" class="">About Us</a></li>
+	<li id="accordion-menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://www.vetsfarma.com/vision-and-mission/" rel="nofollow" class="">Vision &#038; Mission</a></li>
+	<li id="accordion-menu-item-534" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://www.vetsfarma.com/founder/" rel="nofollow" class="">Founder</a></li>
+	<li id="accordion-menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://www.vetsfarma.com/leadership-team/" rel="nofollow" class="">Leadership Team</a></li>
+</ul>
+</li>
+<li id="accordion-menu-item-603" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has-sub"><a href="#" rel="nofollow" class="">Country</a>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-604" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://vetsfarma.com/shop/?filters=country%5B22%5D" rel="nofollow" class="">India</a></li>
+	<li id="accordion-menu-item-605" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://vetsfarma.com/shop/?filters=country%5B23%5D" rel="nofollow" class="">Nepal</a></li>
+	<li id="accordion-menu-item-607" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://vetsfarma.com/shop/?filters=country%5B24%5D" rel="nofollow" class="">Bangladesh</a></li>
+	<li id="accordion-menu-item-608" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://vetsfarma.com/shop/?filters=country%5B25%5D" rel="nofollow" class="">Philippines</a></li>
+	<li id="accordion-menu-item-788" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://vetsfarma.com/shop/?filters=country%5B26%5D" rel="nofollow" class="">Oman</a></li>
+	<li id="accordion-menu-item-789" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://vetsfarma.com/shop/?filters=country%5B27%5D" rel="nofollow" class="">Bhutan</a></li>
+	<li id="accordion-menu-item-786" class="menu-item menu-item-type-custom menu-item-object-custom "></li>
+	<li id="accordion-menu-item-1088" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="#" rel="nofollow" class="">USA</a></li>
+</ul>
+</li>
+<li id="accordion-menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children  has-sub"><a href="https://www.vetsfarma.com/animal-healthcare-company/" rel="nofollow" class="">Livestock</a>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-64" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/" rel="nofollow" class="">Anthelmintics</a></li>
+	<li id="accordion-menu-item-564" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/" rel="nofollow" class="">Antibacterial / Antibiotic</a></li>
+	<li id="accordion-menu-item-553" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/animal-healthcare-company/anti-inflammatory-analgesic-antipyretic/" rel="nofollow" class="">Anti-inflammatory, Analgesic &amp; Antipyretic</a></li>
+	<li id="accordion-menu-item-554" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/" rel="nofollow" class="">Feed Supplement</a></li>
+	<li id="accordion-menu-item-71" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/animal-healthcare-company/hormones/" rel="nofollow" class="">Hormones</a></li>
+	<li id="accordion-menu-item-70" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/animal-healthcare-company/herbals/" rel="nofollow" class="">Herbals</a></li>
+	<li id="accordion-menu-item-563" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/animal-healthcare-company/probiotic-combination/" rel="nofollow" class="">Probiotic Combination</a></li>
+	<li id="accordion-menu-item-562" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/animal-healthcare-company/metabolic-stimulant/" rel="nofollow" class="">Metabolic stimulant</a></li>
+	<li id="accordion-menu-item-72" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/animal-healthcare-company/supportive/" rel="nofollow" class="">Supportive</a></li>
+	<li id="accordion-menu-item-718" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/animal-healthcare-company/anti-histaminic/" rel="nofollow" class="">Anti-Histaminic</a></li>
+	<li id="accordion-menu-item-65" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/animal-healthcare-company/anti-bloat/" rel="nofollow" class="">Anti Bloat</a></li>
+	<li id="accordion-menu-item-991" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/animal-healthcare-company/phytogenic-hepatotonic-feed-additive/" rel="nofollow" class="">Phytogenic Hepatotonic Feed Additive</a></li>
+</ul>
+</li>
+<li id="accordion-menu-item-26" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children  has-sub"><a href="https://www.vetsfarma.com/poultry/" rel="nofollow" class="">Poultry</a>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-251" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/poultry/acidifier/" rel="nofollow" class="">Acidifier</a></li>
+	<li id="accordion-menu-item-74" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/poultry/antibacterial-antibiotics-poultry/" rel="nofollow" class="">Antibacterial / Antibiotics</a></li>
+	<li id="accordion-menu-item-556" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/poultry/anti-inflammatory-analgesic-antipyretic-poultry/" rel="nofollow" class="">Anti-inflammatory, Analgesic &amp; Antipyretic</a></li>
+	<li id="accordion-menu-item-558" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/poultry/poultry-feed-additives/" rel="nofollow" class="">Feed supplement</a></li>
+	<li id="accordion-menu-item-559" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/poultry/immunomodulator/" rel="nofollow" class="">Immunomodulator</a></li>
+	<li id="accordion-menu-item-993" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/poultry/phytogenic-feed-additives-poultry/" rel="nofollow" class="">Phytogenic Hepatotonic Feed Additive</a></li>
+	<li id="accordion-menu-item-561" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/poultry/toxin-binder/" rel="nofollow" class="">Toxin Binder</a></li>
+	<li id="accordion-menu-item-78" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/poultry/supportive-poultry/" rel="nofollow" class="">Supportive</a></li>
+	<li id="accordion-menu-item-1089" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat "><a href="https://www.vetsfarma.com/poultry/enzymes/" rel="nofollow" class="">Enzymes</a></li>
+</ul>
+</li>
+<li id="accordion-menu-item-508" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://www.vetsfarma.com/news-events/" rel="nofollow" class="">News &#038; Events</a></li>
+<li id="accordion-menu-item-1645" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://www.vetsfarma.com/training-program-or-events/" rel="nofollow" class="">Training Programs</a></li>
+<li id="accordion-menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://www.vetsfarma.com/contact-us/" rel="nofollow" class="">Contact Us</a></li>
+</ul></div><div class="menu-wrap"><ul id="menu-upper-nav-1" class="top-links accordion-menu show-arrow"><li id="accordion-menu-item-836" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has-sub"><h5>Login</h5>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-1513" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://play.google.com/store/apps/details?id=creative.vetsfarma" rel="nofollow" class="">Install App &#038; Start Reporting</a></li>
+	<li id="accordion-menu-item-1520" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://fieldforce.vetsfarma.com/" rel="nofollow" class="">New Field Force S/w</a></li>
+	<li id="accordion-menu-item-837" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://app.vetsfarma.com/" rel="nofollow" class="">Admin</a></li>
+</ul>
+</li>
+</ul></div>
+</div>
+<a href="#" id="nav-panel-close" class=""><i class="fa fa-close"></i></a>
+<div class="sidebar-overlay"></div>
+<div class="mobile-sidebar">
+    <div class="sidebar-toggle"><i class="fa"></i></div>
+    <div class="sidebar-content">
+        <aside id="woocommerce_product_categories-3" class="widget woocommerce widget_product_categories"><h3 class="widget-title">CATEGORIES</h3><ul class="product-categories"><li class="cat-item cat-item-21 cat-parent"><a href="https://www.vetsfarma.com/animal-healthcare-company/">Livestock</a><ul class='children'>
+<li class="cat-item cat-item-31"><a href="https://www.vetsfarma.com/animal-healthcare-company/anthelmintics/">Anthelmintics</a></li>
+<li class="cat-item cat-item-37"><a href="https://www.vetsfarma.com/animal-healthcare-company/anti-bloat/">Anti Bloat</a></li>
+<li class="cat-item cat-item-116"><a href="https://www.vetsfarma.com/animal-healthcare-company/anti-histaminic/">Anti-Histaminic</a></li>
+<li class="cat-item cat-item-76"><a href="https://www.vetsfarma.com/animal-healthcare-company/anti-inflammatory-analgesic-antipyretic/">Anti-inflammatory, Analgesic &amp; Antipyretic</a></li>
+<li class="cat-item cat-item-50"><a href="https://www.vetsfarma.com/animal-healthcare-company/antibacterial-antibiotic/">Antibacterial / Antibiotic</a></li>
+<li class="cat-item cat-item-119"><a href="https://www.vetsfarma.com/animal-healthcare-company/corticosteroids/">Corticosteroids</a></li>
+<li class="cat-item cat-item-114"><a href="https://www.vetsfarma.com/animal-healthcare-company/feed-supplement/">Feed Supplement</a></li>
+<li class="cat-item cat-item-38"><a href="https://www.vetsfarma.com/animal-healthcare-company/herbals/">Herbals</a></li>
+<li class="cat-item cat-item-35"><a href="https://www.vetsfarma.com/animal-healthcare-company/hormones/">Hormones</a></li>
+<li class="cat-item cat-item-51"><a href="https://www.vetsfarma.com/animal-healthcare-company/metabolic-stimulant/">Metabolic stimulant</a></li>
+<li class="cat-item cat-item-123"><a href="https://www.vetsfarma.com/animal-healthcare-company/phytogenic-hepatotonic-feed-additive/">Phytogenic Hepatotonic Feed Additive</a></li>
+<li class="cat-item cat-item-64"><a href="https://www.vetsfarma.com/animal-healthcare-company/probiotic-combination/">Probiotic Combination</a></li>
+<li class="cat-item cat-item-34"><a href="https://www.vetsfarma.com/animal-healthcare-company/supportive/">Supportive</a></li>
+</ul>
+</li>
+<li class="cat-item cat-item-20 cat-parent"><a href="https://www.vetsfarma.com/poultry/">Poultry</a><ul class='children'>
+<li class="cat-item cat-item-48"><a href="https://www.vetsfarma.com/poultry/acidifier/">Acidifier</a></li>
+<li class="cat-item cat-item-113"><a href="https://www.vetsfarma.com/poultry/anti-inflammatory-analgesic-antipyretic-poultry/">Anti-inflammatory, Analgesic &amp; Antipyretic</a></li>
+<li class="cat-item cat-item-40"><a href="https://www.vetsfarma.com/poultry/antibacterial-antibiotics-poultry/">Antibacterial / Antibiotics</a></li>
+<li class="cat-item cat-item-126"><a href="https://www.vetsfarma.com/poultry/enzymes/">Enzymes</a></li>
+<li class="cat-item cat-item-97"><a href="https://www.vetsfarma.com/poultry/poultry-feed-additives/">Feed supplement</a></li>
+<li class="cat-item cat-item-121"><a href="https://www.vetsfarma.com/poultry/hepatatonic/">Hepatatonic</a></li>
+<li class="cat-item cat-item-95"><a href="https://www.vetsfarma.com/poultry/immunomodulator/">Immunomodulator</a></li>
+<li class="cat-item cat-item-125"><a href="https://www.vetsfarma.com/poultry/phytogenic-feed-additives-poultry/">Phytogenic Hepatotonic Feed Additive</a></li>
+<li class="cat-item cat-item-44"><a href="https://www.vetsfarma.com/poultry/supportive-poultry/">Supportive</a></li>
+<li class="cat-item cat-item-100"><a href="https://www.vetsfarma.com/poultry/toxin-binder/">Toxin Binder</a></li>
+</ul>
+</li>
+<li class="cat-item cat-item-124"><a href="https://www.vetsfarma.com/uncategorized/">Uncategorized</a></li>
+</ul></aside><div class="berocket_single_filter_widget berocket_single_filter_widget_1658 " data-id="1658" style=""><div class="bapf_sfilter bapf_ckbox bapf_ccolaps" data-op="OR" data-taxonomy="pa_country" data-name="COUNTRY" id="bapf_2"><div class="bapf_head bapf_colaps_togl"><h3 class="bapf_hascolarr">COUNTRY<i class="bapf_colaps_smb fa fa-chevron-up bapf_hide_mobile"></i></h3></div><div class="bapf_body"><ul><li><input data-name="Bangladesh" id="bapf_2_24" type="checkbox" value="24"><label for="bapf_2_24">Bangladesh</label></li><li><input data-name="Bhutan" id="bapf_2_27" type="checkbox" value="27"><label for="bapf_2_27">Bhutan</label></li><li><input data-name="India" id="bapf_2_22" type="checkbox" value="22"><label for="bapf_2_22">India</label></li><li><input data-name="Nepal" id="bapf_2_23" type="checkbox" value="23"><label for="bapf_2_23">Nepal</label></li><li><input data-name="Oman" id="bapf_2_26" type="checkbox" value="26"><label for="bapf_2_26">Oman</label></li><li><input data-name="Philippines" id="bapf_2_25" type="checkbox" value="25"><label for="bapf_2_25">Philippines</label></li><li><input data-name="Vietnam" id="bapf_2_117" type="checkbox" value="117"><label for="bapf_2_117">Vietnam</label></li></ul></div></div></div>
+    </div>
+</div>
+
+
+<!--[if lt IE 9]>
+<script src="https://www.vetsfarma.com/wp-content/themes/porto/js/html5shiv.min.js"></script>
+<script src="https://www.vetsfarma.com/wp-content/themes/porto/js/respond.min.js"></script>
+<![endif]-->
+
+	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+	</script>
+			<script type="text/javascript">
+			var wc_product_block_data = JSON.parse( decodeURIComponent( '%7B%22min_columns%22%3A1%2C%22max_columns%22%3A6%2C%22default_columns%22%3A3%2C%22min_rows%22%3A1%2C%22max_rows%22%3A6%2C%22default_rows%22%3A1%2C%22thumbnail_size%22%3A300%2C%22placeholderImgSrc%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fwp-content%5C%2Fuploads%5C%2Fwoocommerce-placeholder-600x600.png%22%2C%22min_height%22%3A500%2C%22default_height%22%3A500%2C%22isLargeCatalog%22%3Afalse%2C%22limitTags%22%3Afalse%2C%22hasTags%22%3Atrue%2C%22productCategories%22%3A%5B%7B%22term_id%22%3A124%2C%22name%22%3A%22Uncategorized%22%2C%22slug%22%3A%22uncategorized%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A124%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A0%2C%22count%22%3A3%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Funcategorized%5C%2F%22%7D%2C%7B%22term_id%22%3A48%2C%22name%22%3A%22Acidifier%22%2C%22slug%22%3A%22acidifier%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A48%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A20%2C%22count%22%3A1%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fpoultry%5C%2Facidifier%5C%2F%22%7D%2C%7B%22term_id%22%3A31%2C%22name%22%3A%22Anthelmintics%22%2C%22slug%22%3A%22anthelmintics%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A31%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A21%2C%22count%22%3A9%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fanimal-healthcare-company%5C%2Fanthelmintics%5C%2F%22%7D%2C%7B%22term_id%22%3A37%2C%22name%22%3A%22Anti%20Bloat%22%2C%22slug%22%3A%22anti-bloat%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A37%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A21%2C%22count%22%3A1%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fanimal-healthcare-company%5C%2Fanti-bloat%5C%2F%22%7D%2C%7B%22term_id%22%3A116%2C%22name%22%3A%22Anti-Histaminic%22%2C%22slug%22%3A%22anti-histaminic%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A116%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A21%2C%22count%22%3A1%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fanimal-healthcare-company%5C%2Fanti-histaminic%5C%2F%22%7D%2C%7B%22term_id%22%3A113%2C%22name%22%3A%22Anti-inflammatory%2C%20Analgesic%20%26amp%3B%20Antipyretic%22%2C%22slug%22%3A%22anti-inflammatory-analgesic-antipyretic-poultry%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A113%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A20%2C%22count%22%3A1%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fpoultry%5C%2Fanti-inflammatory-analgesic-antipyretic-poultry%5C%2F%22%7D%2C%7B%22term_id%22%3A76%2C%22name%22%3A%22Anti-inflammatory%2C%20Analgesic%20%26amp%3B%20Antipyretic%22%2C%22slug%22%3A%22anti-inflammatory-analgesic-antipyretic%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A76%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A21%2C%22count%22%3A5%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fanimal-healthcare-company%5C%2Fanti-inflammatory-analgesic-antipyretic%5C%2F%22%7D%2C%7B%22term_id%22%3A50%2C%22name%22%3A%22Antibacterial%20%5C%2F%20Antibiotic%22%2C%22slug%22%3A%22antibacterial-antibiotic%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A50%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A21%2C%22count%22%3A12%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fanimal-healthcare-company%5C%2Fantibacterial-antibiotic%5C%2F%22%7D%2C%7B%22term_id%22%3A40%2C%22name%22%3A%22Antibacterial%20%5C%2F%20Antibiotics%22%2C%22slug%22%3A%22antibacterial-antibiotics-poultry%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A40%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A20%2C%22count%22%3A8%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fpoultry%5C%2Fantibacterial-antibiotics-poultry%5C%2F%22%7D%2C%7B%22term_id%22%3A119%2C%22name%22%3A%22Corticosteroids%22%2C%22slug%22%3A%22corticosteroids%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A119%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A21%2C%22count%22%3A1%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fanimal-healthcare-company%5C%2Fcorticosteroids%5C%2F%22%7D%2C%7B%22term_id%22%3A126%2C%22name%22%3A%22Enzymes%22%2C%22slug%22%3A%22enzymes%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A126%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A20%2C%22count%22%3A3%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fpoultry%5C%2Fenzymes%5C%2F%22%7D%2C%7B%22term_id%22%3A97%2C%22name%22%3A%22Feed%20supplement%22%2C%22slug%22%3A%22poultry-feed-additives%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A97%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A20%2C%22count%22%3A6%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fpoultry%5C%2Fpoultry-feed-additives%5C%2F%22%7D%2C%7B%22term_id%22%3A114%2C%22name%22%3A%22Feed%20Supplement%22%2C%22slug%22%3A%22feed-supplement%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A114%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A21%2C%22count%22%3A9%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fanimal-healthcare-company%5C%2Ffeed-supplement%5C%2F%22%7D%2C%7B%22term_id%22%3A121%2C%22name%22%3A%22Hepatatonic%22%2C%22slug%22%3A%22hepatatonic%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A121%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A20%2C%22count%22%3A1%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fpoultry%5C%2Fhepatatonic%5C%2F%22%7D%2C%7B%22term_id%22%3A38%2C%22name%22%3A%22Herbals%22%2C%22slug%22%3A%22herbals%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A38%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A21%2C%22count%22%3A3%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fanimal-healthcare-company%5C%2Fherbals%5C%2F%22%7D%2C%7B%22term_id%22%3A35%2C%22name%22%3A%22Hormones%22%2C%22slug%22%3A%22hormones%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A35%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A21%2C%22count%22%3A2%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fanimal-healthcare-company%5C%2Fhormones%5C%2F%22%7D%2C%7B%22term_id%22%3A95%2C%22name%22%3A%22Immunomodulator%22%2C%22slug%22%3A%22immunomodulator%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A95%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A20%2C%22count%22%3A1%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fpoultry%5C%2Fimmunomodulator%5C%2F%22%7D%2C%7B%22term_id%22%3A21%2C%22name%22%3A%22Livestock%22%2C%22slug%22%3A%22animal-healthcare-company%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A21%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A0%2C%22count%22%3A55%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fanimal-healthcare-company%5C%2F%22%7D%2C%7B%22term_id%22%3A51%2C%22name%22%3A%22Metabolic%20stimulant%22%2C%22slug%22%3A%22metabolic-stimulant%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A51%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A21%2C%22count%22%3A2%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fanimal-healthcare-company%5C%2Fmetabolic-stimulant%5C%2F%22%7D%2C%7B%22term_id%22%3A125%2C%22name%22%3A%22Phytogenic%20Hepatotonic%20Feed%20Additive%22%2C%22slug%22%3A%22phytogenic-feed-additives-poultry%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A125%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A20%2C%22count%22%3A1%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fpoultry%5C%2Fphytogenic-feed-additives-poultry%5C%2F%22%7D%2C%7B%22term_id%22%3A123%2C%22name%22%3A%22Phytogenic%20Hepatotonic%20Feed%20Additive%22%2C%22slug%22%3A%22phytogenic-hepatotonic-feed-additive%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A123%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A21%2C%22count%22%3A0%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fanimal-healthcare-company%5C%2Fphytogenic-hepatotonic-feed-additive%5C%2F%22%7D%2C%7B%22term_id%22%3A20%2C%22name%22%3A%22Poultry%22%2C%22slug%22%3A%22poultry%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A20%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A0%2C%22count%22%3A26%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fpoultry%5C%2F%22%7D%2C%7B%22term_id%22%3A64%2C%22name%22%3A%22Probiotic%20Combination%22%2C%22slug%22%3A%22probiotic-combination%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A64%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A21%2C%22count%22%3A1%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fanimal-healthcare-company%5C%2Fprobiotic-combination%5C%2F%22%7D%2C%7B%22term_id%22%3A34%2C%22name%22%3A%22Supportive%22%2C%22slug%22%3A%22supportive%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A34%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A21%2C%22count%22%3A10%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fanimal-healthcare-company%5C%2Fsupportive%5C%2F%22%7D%2C%7B%22term_id%22%3A44%2C%22name%22%3A%22Supportive%22%2C%22slug%22%3A%22supportive-poultry%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A44%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A20%2C%22count%22%3A1%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fpoultry%5C%2Fsupportive-poultry%5C%2F%22%7D%2C%7B%22term_id%22%3A100%2C%22name%22%3A%22Toxin%20Binder%22%2C%22slug%22%3A%22toxin-binder%22%2C%22term_group%22%3A0%2C%22term_taxonomy_id%22%3A100%2C%22taxonomy%22%3A%22product_cat%22%2C%22description%22%3A%22%22%2C%22parent%22%3A20%2C%22count%22%3A2%2C%22filter%22%3A%22raw%22%2C%22link%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2Fpoultry%5C%2Ftoxin-binder%5C%2F%22%7D%5D%2C%22homeUrl%22%3A%22https%3A%5C%2F%5C%2Fwww.vetsfarma.com%5C%2F%22%7D' ) );
+		</script>
+		<style id='core-block-supports-inline-css' type='text/css'>
+/**
+ * Core styles: block-supports
+ */
+
+</style>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/woocommerce/assets/js/accounting/accounting.js?ver=0.4.2&#039; defer=&#039;defer" id="accounting-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/woocommerce/assets/js/selectWoo/selectWoo.full.js?ver=1.0.6&#039; defer=&#039;defer" id="selectWoo-js"></script>
+<script type="text/javascript" id="yith-wcan-shortcodes-js-extra">
+/* <![CDATA[ */
+var yith_wcan_shortcodes = {"query_param":"yith_wcan","supported_taxonomies":["product_cat","product_tag","pa_country"],"content":"#main","change_browser_url":"1","instant_filters":"1","ajax_filters":"1","reload_on_back":"1","show_clear_filter":"","scroll_top":"","scroll_target":"","modal_on_mobile":"","session_param":"","show_current_children":"","loader":"","toggles_open_on_modal":"","mobile_media_query":"991","base_url":"https:\/\/www.vetsfarma.com\/shop\/","terms_per_page":"10","currency_format":{"symbol":"&pound;","decimal":".","thousand":",","precision":2,"format":"%s%v"},"labels":{"empty_option":"All","search_placeholder":"Search...","no_items":"No item found","show_more":"Show %d more","close":"Close","save":"Save","show_results":"Show results","clear_selection":"Clear","clear_all_selections":"Clear All"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/yith-woocommerce-ajax-navigation/assets/js/yith-wcan-shortcodes.js?ver=4.29.0&#039; defer=&#039;defer" id="yith-wcan-shortcodes-js"></script>
+<script type="text/javascript" id="yith-wcan-shortcodes-js-after">
+/* <![CDATA[ */
+jQuery( function($){
+		   $(document).on("skeleton-loaded", function(){$(document).trigger("yith_wcan_init_shortcodes")});
+		} );
+/* ]]> */
+</script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/www.vetsfarma.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.4&#039; defer=&#039;defer" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.js?ver=2.1.4&#039; defer=&#039;defer" id="js-cookie-js"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.js?ver=3.7.3&#039; defer=&#039;defer" id="woocommerce-js"></script>
+<script type="text/javascript" id="wc-cart-fragments-js-extra">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_c1d2456e20a5c39b287ed7059a3dc1c5","fragment_name":"wc_fragments_c1d2456e20a5c39b287ed7059a3dc1c5","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.js?ver=3.7.3&#039; defer=&#039;defer" id="wc-cart-fragments-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/yith-woocommerce-ajax-search/assets/js/yith-autocomplete.js?ver=1.38.0&#039; defer=&#039;defer" id="yith_autocomplete-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-includes/js/underscore.min.js?ver=1.13.4&#039; defer=&#039;defer" id="underscore-js"></script>
+<script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-includes/js/wp-util.js?ver=6.5.2&#039; defer=&#039;defer" id="wp-util-js"></script>
+<script type="text/javascript" id="wc-add-to-cart-variation-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.js?ver=3.7.3&#039; defer=&#039;defer" id="wc-add-to-cart-variation-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.1.1&#039; defer=&#039;defer" id="wpb_composer_front_js-js"></script>
+<script type="text/javascript" id="porto-theme-js-extra">
+/* <![CDATA[ */
+var js_porto_vars = {"rtl":"","ajax_url":"https:\/\/www.vetsfarma.com\/wp-admin\/admin-ajax.php","change_logo":"0","container_width":"1140","grid_gutter_width":"20","show_sticky_header":"1","show_sticky_header_tablet":"1","show_sticky_header_mobile":"0","ajax_loader_url":":\/\/www.vetsfarma.com\/wp-content\/themes\/porto\/images\/ajax-loader@2x.gif","category_ajax":"0","prdctfltr_ajax":"","show_minicart":"0","slider_loop":"1","slider_autoplay":"1","slider_autoheight":"1","slider_speed":"5000","slider_nav":"","slider_nav_hover":"1","slider_margin":"","slider_dots":"1","slider_animatein":"","slider_animateout":"","product_thumbs_count":"4","product_zoom":"0","product_zoom_mobile":"1","product_image_popup":"0","zoom_type":"inner","zoom_scroll":"1","zoom_lens_size":"200","zoom_lens_shape":"square","zoom_contain_lens":"1","zoom_lens_border":"1","zoom_border_color":"#888888","zoom_border":"0","screen_lg":"1160","mfp_counter":"%curr% of %total%","mfp_img_error":"<a href=\"%url%\">The image<\/a> could not be loaded.","mfp_ajax_error":"<a href=\"%url%\">The content<\/a> could not be loaded.","popup_close":"Close","popup_prev":"Previous","popup_next":"Next","request_error":"The requested content cannot be loaded.<br\/>Please try again later."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/themes/porto/js/theme.min.js?ver=3.6.4&#039; defer=&#039;defer" id="porto-theme-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-includes/js/jquery/ui/mouse.js?ver=1.13.2&#039; defer=&#039;defer" id="jquery-ui-mouse-js"></script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-includes/js/jquery/ui/slider.js?ver=1.13.2&#039; defer=&#039;defer" id="jquery-ui-slider-js"></script>
+<script type="text/javascript" id="berocket_aapf_widget-script-js-extra">
+/* <![CDATA[ */
+var the_ajax_script = {"disable_ajax_loading":"","url_variable":"filters","url_mask":"%t%[%v%]","url_split":"|","nice_url_variable":"","nice_url_value_1":"","nice_url_value_2":"","nice_url_split":"","version":"1.6.4.5","number_style":["",".","2"],"current_language":"","current_page_url":"https:\/\/www.vetsfarma.com\/shop","ajaxurl":"https:\/\/www.vetsfarma.com\/wp-admin\/admin-ajax.php","product_cat":"-1","product_taxonomy":"-1","s":"","products_holder_id":"ul.products","result_count_class":".woocommerce-result-count","ordering_class":"form.woocommerce-ordering","pagination_class":".woocommerce-pagination","control_sorting":"1","seo_friendly_urls":"1","seo_uri_decode":"1","slug_urls":"","nice_urls":"","ub_product_count":"","ub_product_text":"","ub_product_button_text":"","default_sorting":"menu_order","first_page":"1","scroll_shop_top":"1","ajax_request_load":"1","ajax_request_load_style":"jquery","use_request_method":"get","no_products":"<div class=\"bapf_no_products\">\r\n<p class=\"woocommerce-info\">No products were found matching your selection.<\/p>\r\r\n<\/div>","recount_products":"1","pos_relative":"1","woocommerce_removes":{"result_count":"","ordering":"","pagination":"","pagination_ajax":true},"pagination_ajax":"1","description_show":"click","description_hide":"click","hide_sel_value":"","hide_o_value":"1","use_select2":"","hide_empty_value":"1","hide_button_value":"","scroll_shop_top_px":"-180","load_image":"<div class=\"bapf_loader_page\"><div class=\"bapf_lcontainer\"><span class=\"bapf_loader\"><span class=\"bapf_lfirst\"><\/span><span class=\"bapf_lsecond\"><\/span><\/span><\/div><\/div>","translate":{"show_value":"Show value(s)","hide_value":"Hide value(s)","unselect_all":"Unselect all","nothing_selected":"Nothing is selected","products":"products"},"trailing_slash":"1","pagination_base":"page","reload_changed_filters":""};
+var the_ajax_script = {"disable_ajax_loading":"","url_variable":"filters","url_mask":"%t%[%v%]","url_split":"|","nice_url_variable":"","nice_url_value_1":"","nice_url_value_2":"","nice_url_split":"","version":"1.6.4.5","number_style":["",".","2"],"current_language":"","current_page_url":"https:\/\/www.vetsfarma.com\/shop","ajaxurl":"https:\/\/www.vetsfarma.com\/wp-admin\/admin-ajax.php","product_cat":"-1","product_taxonomy":"-1","s":"","products_holder_id":"ul.products","result_count_class":".woocommerce-result-count","ordering_class":"form.woocommerce-ordering","pagination_class":".woocommerce-pagination","control_sorting":"1","seo_friendly_urls":"1","seo_uri_decode":"1","slug_urls":"","nice_urls":"","ub_product_count":"","ub_product_text":"","ub_product_button_text":"","default_sorting":"menu_order","first_page":"1","scroll_shop_top":"1","ajax_request_load":"1","ajax_request_load_style":"jquery","use_request_method":"get","no_products":"<div class=\"bapf_no_products\">\r\n<p class=\"woocommerce-info\">No products were found matching your selection.<\/p>\r\r\n<\/div>","recount_products":"1","pos_relative":"1","woocommerce_removes":{"result_count":"","ordering":"","pagination":"","pagination_ajax":true},"pagination_ajax":"1","description_show":"click","description_hide":"click","hide_sel_value":"","hide_o_value":"1","use_select2":"","hide_empty_value":"1","hide_button_value":"","scroll_shop_top_px":"-180","load_image":"<div class=\"bapf_loader_page\"><div class=\"bapf_lcontainer\"><span class=\"bapf_loader\"><span class=\"bapf_lfirst\"><\/span><span class=\"bapf_lsecond\"><\/span><\/span><\/div><\/div>","translate":{"show_value":"Show value(s)","hide_value":"Hide value(s)","unselect_all":"Unselect all","nothing_selected":"Nothing is selected","products":"products"},"trailing_slash":"1","pagination_base":"page","reload_changed_filters":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.vetsfarma.com/wp-content/plugins/woocommerce-ajax-filters/assets/frontend/js/main.min.js?ver=1.6.4.5&#039; defer=&#039;defer" id="berocket_aapf_widget-script-js"></script>
+
+
+
+    <script type="text/javascript">
+        
+                    function menu_big_width() {  
+    var screen_width = jQuery(window).width();
+    if( screen_width > 974 ){
+        jQuery('.banner-bg-menu').find('.inner').addClass('menu-big-width');
+        jQuery('.menu-big-width').css("width", screen_width - 50);
+    }
+}
+jQuery(document).ready(function(){
+    menu_big_width();
+    jQuery(window).resize(function(){
+       menu_big_width()
+    })
+    
+});
+                
+    </script>
+
+
+</body>
+</html>
